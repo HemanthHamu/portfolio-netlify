@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(450deg,#0E1226,#251B4F);
+    background-color: #fff;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #fff;
     padding-top: 80px;
