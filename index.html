@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio2.css">
+    <script src="https://unpkg.com/gsap@3.10.0/dist/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/2300780027.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <header>
+        <nav class="navbar" id="sidebar">
+            <a href="#">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="/myportfolio/certifications.html">Certifications</a>
+            <a href="#container">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="#about-me">About</a>
+            <a href="resume(web developer).pdf" download class="cv">Download CV</a>
+        </nav>
+        <hr style="border: 1px solid #ef9696;">
+    </header>
+
+    <div class="image-container" id="about-me">
+        <div class="my-image">
+           <div class="image-adjustment">
+           </div>
+        </div>
+        <h1>Hello there !!<br> I am <span class="h">H</span>emanth </h1>
+    </div>
+    
+<div class="container" id="container">
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hi i am Hemanth Sahukari a passionate web developer graduated from avanthi
+                engineering college in the stream of computer science.
+            </p>
+        </div>
+        <h1 id="projects-text">Projects</h1><hr>
+        <div class="projects" id="projects">
+            <div class="project1-container">
+                <div class="project1-details">
+                    <p>Project Name : Recipe Store</p>
+                    <p>Skills Used : HTML,CSS and JavaScript</p>
+                    <p>API Used : mealDB</p>
+                    <p>Project Description : </p><br>
+                    <p> 
+                        i created this website using HTML,CSS and JavaScript and i have used mealDB API for getting
+                        recipes whenever user searched for a specific recipe and i have used greensock animations(GSAP) to increase the beauty of website.
+                    </p>
+                    <p>Project link : <a href="https://github.com/HemanthHamu/recipeproject.git">Github</a></p>
+                </div>
+                <iframe width="600" height="500" src="https://www.youtube.com/embed/noB6JzTjYNg?si=dTmMjw8zv0kOiRwU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+             <div class="project1-container">
+                <iframe width="600" height="500" src="https://www.youtube.com/embed/HgsCJ5SZZP0?si=3SIUv4KPrR0PzGTJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="project1-details">
+                    <p>Project Name : Shoe Store</p>
+                    <p>Skills Used : HTML,CSS,Python,Django</p>
+                    <p>Database used : mySQL</p>
+                    <p>Project Description : </p><br>
+                    <p> 
+                        i created this website using HTML,CSS,Python and Django and i have used mySQL to store user details whenever
+                        they have entered their details through login form or register form.
+                    </p>
+                    <p>Project link : <a href="https://github.com/HemanthHamu/projects.git">Github</a></p>
+                </div>
+            </div>
+            <div class="project1-container">
+                <div class="project1-details">
+                    <p>Project Name : Age Calculator</p>
+                    <p>Skills Used : HTML,CSS and JavaScript</p>
+                    <p>Project link : <a href="https://github.com/HemanthHamu/projects.git">Github</a></p>
+                </div>
+                <img width="600" height="500" src="agecalculatorimage.jpg">
+            </div>
+            <div class="project1-container">
+                <div class="project1-details">
+                    <p>Project Name : Rock-Paper-Scissor</p>
+                    <p>Skills Used : HTML,CSS and JavaScript</p>
+                    <p>Project Description : </p><br>
+                    <p> 
+                        i created this game using HTML,CSS and JavaScript. For computer move i have created a function which generates a random number
+                        and that random number will go towards conditional statements and give the result (rock or paper or scissor) based on which condition is true.
+                    </p>
+                    <p>Project link : <a href="https://github.com/HemanthHamu/projects.git">Github</a></p>
+                </div>
+                <img src="rockpaperscissorimage.jpg" alt="rockpaperscissor" width="600" height="500">
+            </div>
+        </div>
+    </div>
+    <h1 id="skills">TECHNICAL <span style="color: aqua;">SKILLS</span></h1><hr style="margin-top: -15px;">
+    <div class="skills">
+        <p>HTML</p>
+        <p>CSS</p>
+        <p>JavaScript</p>
+        <p>Node js</p>
+        <p>Python</p>
+        <p>SQL</p>
+    </div>
+    <div id="contact">
+        <h2>Contact Me</h2>
+        <div class="mail">
+            <p>Email : <a href="mailto:sahukarihemanth586@gmail.com">sahukarihemanth586@gmail.com</a></p>
+        </div>
+        <div class="linkedin">
+            <i class="fa-brands fa-linkedin"> : </i>
+            <a href="https://www.linkedin.com/in/hemanth586/">Hemanth Sahukari</a>
+        </div>
+    </div>
+</div>
+
+
+    <footer>
+        &copy; 2023 Hemanth Sahukari
+    </footer>
+    <script src="/myportfolio/portfolio2.js"></script>
+    <script>
+        gsap.from('h1', { opacity: 0,y:-50,duration: 2, delay: 0.3, ease: 'power4.out' });
+        gsap.from('.navbar', { opacity: 0,x:-50,duration: 2, delay: 0.5, ease: 'power4.out' });
+        gsap.from('.container', { opacity: 0,x:-50,duration: 2, delay: 1, ease: 'power4.out' });
+        gsap.from('.image-adjustment', { opacity: 0,x:50,duration: 2, delay: 1.2, ease: 'power4.out' });
+    </script>
+
+</body> 
+</html>
