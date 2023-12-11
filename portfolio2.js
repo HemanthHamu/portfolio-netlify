@@ -8,10 +8,10 @@ const border = document.querySelector('.my-image')
 
 function changecolor(){
         if( myImage.style.width === '200px' & myImage.style.height === '200px'){
-            myImage.style.width = '205px';
-            myImage.style.height = '205px';
-            border.style.width = '205px';
-            border.style.height = '205px'
+            myImage.style.width = '201px';
+            myImage.style.height = '201px';
+            border.style.width = '201px';
+            border.style.height = '201px'
         }
         else{
             myImage.style.width = '200px';
