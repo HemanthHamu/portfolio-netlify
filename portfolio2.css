@@ -29,7 +29,7 @@ hr{
 }
 .navbar a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 1.7rem;
     color: #a3d7fa;
     color: rgb(251, 222, 169);
     padding: 10px;
@@ -54,10 +54,10 @@ hr{
 /* header ending */
 /* image container starting */
 .image-container{
-    padding: 50px;
+    padding: 3rem;
     position: static;
     background:linear-gradient(10deg,#0E1226,#251B4F);
-    box-shadow: 0 0 10px aqua;
+    box-shadow: 0 0 5px #a28fee;
     width: 1000px;
     margin: 120px auto;
     border-radius: 20px;
@@ -80,11 +80,11 @@ hr{
 .image-container .my-image{
     width: 200px;
     height: 200px;
-    border: 2px solid white;
     border-radius: 50%;
     padding: 2px;
     margin: auto;
     margin-top: -150px;
+    border: 1px solid #fff;
 }
 .my-image .image-adjustment{
     background: url('selfieimage.jpg');
@@ -92,7 +92,7 @@ hr{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    outline: 1px solid #3498db;
+    outline: 1px solid aquamarine;
 }
 /* image container ending */
 /* container starting */
@@ -108,7 +108,7 @@ hr{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 3rem;
 }
 .project1-container{
     display: flex;
@@ -121,13 +121,15 @@ hr{
     align-items: start;
     flex-direction: column;
     background: linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
-    height: 500px;
-    width: 600px;
-    border: 1px solid white;
+    height: 31.25rem;
+    width: 37.5rem;
+    box-shadow: 0 0 7px rgb(201, 70, 140);
     border-radius: 10px;
 }
-.project1-container iframe{
-    border: 2px solid white;
+.project1-container video{
+    border-radius: 10px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 5px rgb(246, 245, 245);
 }
 .project1-details p{
     font-size: 20px;
@@ -150,7 +152,7 @@ hr{
     background: linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
     font-size: 20px;
     word-spacing: 3px;
-    border:1px solid white;
+    box-shadow: 0 0 7px rgb(201, 70, 140);
 }
 .container p{
     max-width: 800px;
@@ -244,6 +246,7 @@ footer {
     text-align: center;
     padding: 1em 0;
     width: 100%;
+    margin-top: 20px;
        }
  
 /* layout for mobile */
@@ -290,6 +293,10 @@ footer {
     .container .about-me{
         margin-top: -180px;
     }
+    .project1-container{
+        display: flex;
+        gap: 30px;
+    }
      .project1-container .project1-details{
         box-sizing: border-box;
         max-width: 380px;
@@ -299,7 +306,7 @@ footer {
      .project1-details p {
         font-size: 18px;
      }
-     iframe{
+     video{
         max-width: 380px;
      }
      img{
@@ -369,7 +376,7 @@ footer {
      .project1-details p {
         font-size: 18px;
      }
-     iframe{
+     video{
         max-width: 380px;
      }
      img{
