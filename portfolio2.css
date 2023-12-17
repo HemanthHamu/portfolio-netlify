@@ -49,8 +49,6 @@ hr{
 .navbar .cv:hover{
     background-color: #1e53cf;
 }
-
-
 /* header ending */
 /* image container starting */
 .image-container{
@@ -64,11 +62,6 @@ hr{
 }
 .image-container .h {
     color: #53F45E;
-    animation: load 3s linear infinite;
-}
-@keyframes load{
-    0%{transform: rotate(0deg);}
-    100%{transform: rotate(360deg);}
 }
 .image-container h1{
     color:rgb(250, 248, 248);
@@ -206,39 +199,75 @@ h2{
     color: #051d2d;
     font-weight: bolder;
     border-radius: 10px;
-    
 }
-/* contact starting */
-#contact {
+/* contact form starting */
+.contact-form {
     display: flex;
     flex-direction: column;
+    max-width: 600px;
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(450deg,#0E1226,#251B4F);
+    border-radius: 8px;
+    box-shadow: 0 0 4px #a28fee;
+    margin: 50px auto;
+    overflow: hidden;
 }
-#contact a{
-    color: white;
-    font-size: 20px;
+
+.hr-input {
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #a28fee;
+    outline: none;
+    padding: 10px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    background: transparent;
+    font-size: 25px;
+    color: #fff;
 }
-#contact a:hover{
-    color: rgb(27, 27, 247);
+::placeholder{
+    color: #fff;
+    opacity: 0.2;
 }
-#contact .mail{
+
+.hr-input:focus {
+    border-bottom:3px solid #3498db;
+}
+.submit-btn{
+   width: 86%;
+   background-color: #543bba;
+   color: #fff;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 20px;
+   margin-left: 50px;
+}
+.submit-btn:hover {
+   background-color: #3c22a3;
+}
+.social-media{
+    background-color: transparent;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
+    justify-content: space-around;
+    padding: 15px;
 }
-#contact .linkedin{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-top: -10px;
-    cursor: pointer;
+.social-media a{
+    text-decoration: none;
+    color: #fff;
 }
-.linkedin a{
-    color: white;
+.social-media i {
+    font-size: 30px;
+    background-color: #3f2f79;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #3f2f79;
 }
-.linkedin a:hover{
-    color: rgb(90, 90, 194);
+.social-media i:hover{
+    background-color: #2b1d5e;
 }
 footer {
     background-color: #1d153b;
@@ -250,7 +279,7 @@ footer {
        }
  
 /* layout for mobile */
-@media (max-width:500px) {
+@media (max-width:768px) {
    
     .navbar{
         display: grid;
@@ -320,9 +349,18 @@ footer {
      .skills p {
         width: 360px;
      }
-     #contact{
+     /* #contact{
         width: 367px;
         margin: auto;
+     } */
+     .contact-form{
+        width: 367px;
+     }
+     .contact-form .hr-input{
+        margin-left: 30px;
+     }
+     .submit-btn{
+        margin-left: 30px;
      }
 }
 @media (max-width:900px) {
