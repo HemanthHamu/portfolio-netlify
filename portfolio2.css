@@ -45,6 +45,8 @@ hr{
     border-radius: 10px;
     color: #fff;
     font-weight: bolder;
+    border: none;
+    outline: none;
 }
 .navbar .cv:hover{
     background-color: #1e53cf;
@@ -56,7 +58,8 @@ hr{
     position: static;
     background:linear-gradient(10deg,#0E1226,#251B4F);
     box-shadow: 0 0 5px #a28fee;
-    width: 1000px;
+    max-width: 100%;
+    width: 70%;
     margin: 120px auto;
     border-radius: 20px;
 }
@@ -96,37 +99,41 @@ hr{
 }
 .container .about-me{
     max-width: 500px;
-}
-.container .projects{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin-top: 3rem;
+    margin-top: -100px;
 }
 .project1-container{
     display: flex;
-    gap: 200px;
-    margin-bottom: 100px;
     flex-wrap: wrap;
-}
-.project1-container .project1-details{
-    display: flex;
-    align-items: start;
-    flex-direction: column;
-    background: linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
-    height: 31.25rem;
-    width: 37.5rem;
-    box-shadow: 0 0 7px rgb(201, 70, 140);
-    border-radius: 10px;
+    gap: 100px;
+    margin-top: 50px;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 100%;
 }
 .project1-container video{
     border-radius: 10px;
     border: 1px solid #fff;
-    box-shadow: 0 0 5px rgb(246, 245, 245);
+    box-shadow: 0 0 3px rgb(246, 245, 245);
+    width: 45%;
+}
+video:hover{
+    box-shadow: 0 0 9px #fff;
+}
+.project1-container .project1-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
+    box-shadow: 0 0 3px rgb(201, 70, 140);
+    border-radius: 10px;
+    width: 45%;
+}
+.project1-container .project1-details:hover{
+    box-shadow: 0 0 9px rgb(201, 70, 140);
+
 }
 .project1-details p{
     font-size: 20px;
-    margin-left: 20px;
 }
 .project1-details a{
     color: #fff;
@@ -134,12 +141,7 @@ hr{
 .project1-details a:hover{
     color: blue;
 }
-
-.container #contact{
-    max-width: 500px;
-    margin-top: 50px;
-}
-.container .about-me,#contact{
+.container .about-me{
     padding: 10px;
     border-radius: 10px;
     background: linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
@@ -213,6 +215,9 @@ h2{
     margin: 50px auto;
     overflow: hidden;
 }
+.contact-form:hover{
+    box-shadow: 0 0 10px #ab9aef;
+}
 
 .hr-input {
     width: 80%;
@@ -284,36 +289,30 @@ footer {
         margin: 0;
         left: 0;
     }
-   
     .navbar{
         display: grid;
-        grid-template-columns: repeat(3,120px);
+        grid-template-columns: repeat(3,110px);
         margin-left: -1px;
-        padding: 10px;
-        gap: 20px;
+        padding: 1px;
+        gap: 10px;
+        width: 100%;
     }
     .navbar a{
         font-size: 15px;
         margin-left: 20px;
         background-color: #b4f0b8;
         border-radius: 10px;
-        width: 90px;
-        padding: 8px;
     }
     .navbar a:hover{
         border: 0.1px solid #fff;
     }
     .navbar .cv{
-        margin-left: 25px;
-        width: 350px;
-        border: 1px solid whitesmoke;
-    }
-    .navbar .cv:hover{
-        background-color: #1e53cf;
+        border: none;
+        margin-left: 20px;
     }
     .image-container{
-        margin: 200px auto;
-        width: 250px;
+        max-width: 100%;
+        width: 90%;
     }
     .image-container .my-image{
         margin-top: -130px;
@@ -325,28 +324,32 @@ footer {
         font-size: 43px;
     }
     .container .about-me{
-        margin-top: -180px;
+        max-width: 95%;
+        width: 80%;
     }
     .project1-container{
+        max-width: 100%;
+        width: 90%;
+        margin: 30px auto;
         display: flex;
-        gap: 30px;
+        gap: 10px;
+        justify-content: center;
     }
-     .project1-container .project1-details{
-        box-sizing: border-box;
-        max-width: 380px;
-        height: 600px;
-        justify-content: start;
-     }
+    .project1-container video{
+        max-width: 100%;
+        width: 100%;
+        height: 400px;
+    }
+    .project1-container .project1-details{
+        max-width: 100%;
+        width: 100%;
+        padding: 10px;
+    }
      .project1-details p {
         font-size: 18px;
+        text-align: left;
      }
-     video{
-        max-width: 380px;
-     }
-     img{
-        max-width: 380px;
-        border: 2px solid #fff;
-     }
+    
      .skills{
         display: flex;
         gap: 1px;
@@ -371,7 +374,7 @@ footer {
         width: 100%;
      }
 }
-@media (max-width:900px) {
+@media (max-width:1024px) {
    
     .navbar{
         display: grid;
@@ -399,7 +402,8 @@ footer {
     }
     .image-container{
         margin: 200px auto;
-        width: 250px;
+        max-width: 100%;
+        width: 70%;
     }
     .image-container .my-image{
         margin-top: -130px;
@@ -411,19 +415,26 @@ footer {
         font-size: 43px;
     }
     .container .about-me{
-        margin-top: -180px;
+       width: 100%;
+    }
+    .project1-container{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: space-around;
     }
      .project1-container .project1-details{
         box-sizing: border-box;
         max-width: 380px;
-        height: 600px;
+        
         justify-content: start;
      }
      .project1-details p {
         font-size: 18px;
      }
      video{
-        max-width: 380px;
+        max-width: 100%;
+        width: 90%;
      }
      img{
         max-width: 380px;
@@ -431,7 +442,7 @@ footer {
      }
      .skills{
         display: flex;
-        gap: 1px;
+        gap: 10px;
      }
      .skills p {
         width: 360px;
