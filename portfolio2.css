@@ -206,8 +206,8 @@ h2{
 .contact-form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    width: 100%;
+    max-width: 100%;
+    width: 50%;
     padding: 30px;
     background: linear-gradient(450deg,#0E1226,#251B4F);
     border-radius: 8px;
@@ -358,7 +358,8 @@ footer {
         width: 360px;
      }
      .contact-form{
-        width: 310px;
+        max-width: 100%;
+        width: 69%;
      }
      .contact-form p {
         font-size: 55px;
