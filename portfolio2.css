@@ -4,7 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: linear-gradient(450deg,#0E1226,#251B4F);
+    /* background: linear-gradient(450deg,#0E1226,#251B4F); */
+    background: linear-gradient(450deg,#0E1226,#380e43);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: #fff;
     padding-top: 80px;
@@ -118,6 +119,7 @@ hr{
     border: 1px solid #fff;
     box-shadow: 0 0 3px rgb(246, 245, 245);
     width: 45%;
+    cursor: pointer;
 }
 video:hover{
     box-shadow: 0 0 9px #fff;
