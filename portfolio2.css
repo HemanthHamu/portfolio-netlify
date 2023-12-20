@@ -357,7 +357,7 @@ footer {
         width: 100%;
         height: 400px;
     }
-    video:focus{
+    .project1-container video:hover{
         box-shadow: 0 0 10px #fff;
     }
     .project1-container .project1-details{
