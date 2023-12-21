@@ -60,7 +60,7 @@ hr{
     box-shadow: 0 0 5px #a28fee;
     max-width: 100%;
     width: 70%;
-    margin: 120px auto;
+    margin: 120px auto 0px;
     border-radius: 20px;
 }
 .image-container .h {
@@ -92,22 +92,34 @@ hr{
 }
 /* image container ending */
 /* container starting */
-.container{
-    margin: 30px auto;
-    gap: 10px;
-    padding: 10px;
-}
 .container .about-me{
-    max-width: 500px;
-    margin-top: -100px;
+    padding: 20px;
+    width: 500px;
+    background:linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
+    box-shadow: 0 0 3px rgb(201, 70, 140);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 30px;
+    transition: 0.5s;
 }
-.container .projects{
-    margin-bottom: 80px;
+.about-me h2{
+    text-align: center;
 }
+.about-me p {
+    letter-spacing: 1px;
+}
+.about-me:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+#projects-text {
+    text-align: center;
+    color: #FBDEA9;
+}
+
 .project1-container{
     display: flex;
     flex-wrap: wrap;
-    gap: 100px;
     margin-top: 50px;
     justify-content: space-around;
     max-width: 100%;
@@ -121,11 +133,11 @@ hr{
     cursor: pointer;
     transition: 0.5s;
 }
-video:hover{
+.project1-container video:hover{
     transform: scale(1.03);
     transition: 0.5s;
 }
-video:focus{
+.project1-container video:focus{
     box-shadow: 0 0 9px #fff;
 }
 .project1-container .project1-details{
@@ -146,6 +158,7 @@ video:focus{
 }
 .project1-details p{
     font-size: 20px;
+    margin-left: 10px;
 }
 .project1-details a{
     color: #fff;
@@ -153,49 +166,12 @@ video:focus{
 .project1-details a:hover{
     color: blue;
 }
-.container .about-me{
-    padding: 10px;
-    border-radius: 10px;
-    background: linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
-    font-size: 20px;
-    word-spacing: 3px;
-    box-shadow: 0 0 7px rgb(201, 70, 140);
-    transition: 0.5s;
-}
-.container .about-me:hover{
-    transform: scale(1.03);
-    transition: 0.5s;
-}
-.container p{
-    max-width: 800px;
-    text-align: center;
-}
-h2{
-    text-align: center;
-}
 
-.container h2{
-    color: rgb(251, 222, 169);
-}
-.container h1{
-    text-align: center;
-    color:rgb(251, 222, 169) ;
-}
-.container h3{
-    color: #8bcaf4;
-}
-.project .github{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.github a{
-    color: white;
-}
-.github a:hover{
-    color:blue;
-}
 /* skills starting */
+#skills{
+    margin-top: 50px;
+    text-align: center;
+}
 .skills{
     display: flex;
     flex-wrap: wrap;
@@ -205,13 +181,9 @@ h2{
     justify-content: center;
     margin-top: 50px;
 }
-#skills{
-    text-align: center;
-}
 .skills p {
     width: 40%;
     background:linear-gradient(45deg,#EEDEDE,#77c2f5);
-    color: white;
     font-size: 25px;
     padding: 11px;
     text-align: center;
@@ -230,7 +202,6 @@ h2{
     border-radius: 8px;
     box-shadow: 0 0 4px #a28fee;
     margin: 50px auto;
-    overflow: hidden;
 }
 .contact-form:hover{
     box-shadow: 0 0 10px #ab9aef;
@@ -241,7 +212,7 @@ h2{
     border: none;
     border-bottom: 1px solid #a28fee;
     outline: none;
-    padding: 10px;
+    padding: 5px;
     margin-left: 50px;
     margin-bottom: 50px;
     background: transparent;
@@ -257,7 +228,7 @@ h2{
     border-bottom:3px solid #3498db;
 }
 .submit-btn{
-   width: 86%;
+   width: 80%;
    background-color: #543bba;
    color: #fff;
    border: none;
@@ -271,10 +242,9 @@ h2{
    background-color: #3c22a3;
 }
 .social-media{
-    background-color: transparent;
-    width: 100%;
     display: flex;
     justify-content: space-around;
+    background-color: transparent;
     padding: 15px;
 }
 .social-media a{
@@ -300,175 +270,171 @@ footer {
     margin-top: 20px;
        }
  
-/* layout for mobile */
 @media (max-width:768px) {
-    body{
-        margin: 0;
-        left: 0;
+        body{
+            margin: 0;
+            left: 0;
+        }
+        .navbar{
+            display: grid;
+            grid-template-columns: repeat(3,110px);
+            margin-left: -1px;
+            padding: 1px;
+            gap: 10px;
+            width: 100%;
+        }
+        .navbar a{
+            font-size: 15px;
+            margin-left: 20px;
+            border-radius: 10px;
+            background-color: #1c1340;
+        }
+        .navbar a:hover{
+            border: 0.1px solid #fff;
+        }
+        .navbar .cv{
+            border: none;
+            margin-left: 20px;
+        }
+        .image-container{
+            max-width: 100%;
+            width: 90%;
+        }
+        .image-container .my-image{
+            margin-top: -130px;
+        }
+        .my-image .image-adjustment{
+            margin: auto;
+        }
+        .image-container h1{
+            font-size: 43px;
+        }
+        .container .about-me{
+            max-width: 100%;
+            width: 80%;
+            margin: auto;
+        }
+        .project1-container{
+            max-width: 100%;
+            width: 90%;
+            margin: 30px auto;
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
+        .project1-container video{
+            max-width: 100%;
+            width: 100%;
+            height: 400px;
+        }
+        .project1-container video:hover{
+            box-shadow: 0 0 10px #fff;
+        }
+        .project1-container .project1-details{
+            max-width: 100%;
+            width: 100%;
+            padding: 10px;
+        }
+         .project1-details p {
+            font-size: 18px;
+            text-align: left;
+         }
+         .skills{
+            display: flex;
+            gap: 1px;
+         }
+         .skills p {
+            width: 360px;
+         }
+         .contact-form{
+            max-width: 100%;
+            width: 69%;
+         }
+         .contact-form p {
+            font-size: 55px;
+         }
+         .contact-form .hr-input{
+            margin-left: 5px;
+            width: 100%;
+            padding: 5px;
+            font-size: 20px;
+         }
+         .submit-btn{
+            margin-left: 5px;
+            width: 100%;
+         }
     }
-    .navbar{
-        display: grid;
-        grid-template-columns: repeat(3,110px);
-        margin-left: -1px;
-        padding: 1px;
-        gap: 10px;
-        width: 100%;
+    @media (max-width:1024px) {
+       
+        .navbar{
+            display: grid;
+            grid-template-columns: repeat(3,120px);
+            margin-left: -30px;
+            padding: 10px;
+            gap: 10px;
+        }
+        .navbar a{
+            font-size: 15px;
+            margin-left: 20px;
+            border-radius: 10px;
+            width: 90px;
+        }
+        .navbar a:hover{
+            border: 0.1px solid #fff;
+        }
+        .navbar .cv{
+            width: 350px;
+            border: none;
+        }
+        .navbar .cv:hover{
+            background-color: #1e53cf;
+        }
+        .image-container{
+            margin: 200px auto 30px;
+            max-width: 100%;
+            width: 70%;
+        }
+        .image-container .my-image{
+            margin-top: -130px;
+        }
+        .my-image .image-adjustment{
+            margin: auto;
+        }
+        .image-container h1{
+            font-size: 43px;
+        }
+        .container .about-me{
+           max-width: 100%;
+           width: 80%;
+           margin: auto;
+        }
+        .project1-container{
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: space-around;
+            max-width: 100%;
+            width: 90%;
+            margin: 30px auto;
+        }
+        .project1-container video{
+            max-width: 100%;
+            width: 100%;
+         }
+        .project1-container .project1-details{
+            max-width: 100%;
+            width: 100%;
+            padding: 10px;
+            margin: auto;
+        }
+         .project1-details p {
+            font-size: 18px;
+         }
+         .skills{
+            display: flex;
+            gap: 10px;
+         }
+         .skills p {
+            width: 360px;
+         }
     }
-    .navbar a{
-        font-size: 15px;
-        margin-left: 20px;
-        background-color: #b4f0b8;
-        border-radius: 10px;
-    }
-    .navbar a:hover{
-        border: 0.1px solid #fff;
-    }
-    .navbar .cv{
-        border: none;
-        margin-left: 20px;
-    }
-    .image-container{
-        max-width: 100%;
-        width: 90%;
-    }
-    .image-container .my-image{
-        margin-top: -130px;
-    }
-    .my-image .image-adjustment{
-        margin: auto;
-    }
-    .image-container h1{
-        font-size: 43px;
-    }
-    .container .about-me{
-        max-width: 95%;
-        width: 80%;
-    }
-    .project1-container{
-        max-width: 100%;
-        width: 90%;
-        margin: 30px auto;
-        display: flex;
-        gap: 10px;
-        justify-content: center;
-    }
-    .project1-container video{
-        max-width: 100%;
-        width: 100%;
-        height: 400px;
-    }
-    .project1-container video:hover{
-        box-shadow: 0 0 10px #fff;
-    }
-    .project1-container .project1-details{
-        max-width: 100%;
-        width: 100%;
-        padding: 10px;
-    }
-     .project1-details p {
-        font-size: 18px;
-        text-align: left;
-     }
-     .skills{
-        display: flex;
-        gap: 1px;
-     }
-     .skills p {
-        width: 360px;
-     }
-     .contact-form{
-        max-width: 100%;
-        width: 69%;
-     }
-     .contact-form p {
-        font-size: 55px;
-     }
-     .contact-form .hr-input{
-        margin-left: 5px;
-        width: 100%;
-        padding: 5px;
-        font-size: 20px;
-     }
-     .submit-btn{
-        margin-left: 5px;
-        width: 100%;
-     }
-}
-@media (max-width:1024px) {
-   
-    .navbar{
-        display: grid;
-        grid-template-columns: repeat(3,120px);
-        margin-left: -30px;
-        padding: 10px;
-        gap: 10px;
-    }
-    .navbar a{
-        font-size: 15px;
-        margin-left: 20px;
-        background-color: #06410a;
-        border-radius: 10px;
-        width: 90px;
-    }
-    .navbar a:hover{
-        border: 0.1px solid #fff;
-    }
-    .navbar .cv{
-        width: 350px;
-        border: 1px solid whitesmoke;
-    }
-    .navbar .cv:hover{
-        background-color: #1e53cf;
-    }
-    .image-container{
-        margin: 200px auto;
-        max-width: 100%;
-        width: 70%;
-    }
-    .image-container .my-image{
-        margin-top: -130px;
-    }
-    .my-image .image-adjustment{
-        margin: auto;
-    }
-    .image-container h1{
-        font-size: 43px;
-    }
-    .container .about-me{
-       width: 100%;
-    }
-    .project1-container{
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-        justify-content: space-around;
-    }
-     .project1-container .project1-details{
-        box-sizing: border-box;
-        max-width: 380px;
-        
-        justify-content: start;
-     }
-     .project1-details p {
-        font-size: 18px;
-     }
-     video{
-        max-width: 100%;
-        width: 90%;
-     }
-     img{
-        max-width: 380px;
-        border: 2px solid #fff;
-     }
-     .skills{
-        display: flex;
-        gap: 10px;
-     }
-     .skills p {
-        width: 360px;
-     }
-     #contact{
-        width: 367px;
-        margin: auto;
-     }
-}
