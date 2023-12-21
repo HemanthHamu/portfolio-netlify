@@ -288,6 +288,7 @@ footer {
             margin-left: 20px;
             border-radius: 10px;
             background-color: #1c1340;
+            background-color: red;
         }
         .navbar a:hover{
             border: 0.1px solid #fff;
