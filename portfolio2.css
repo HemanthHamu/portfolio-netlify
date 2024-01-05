@@ -93,14 +93,15 @@ hr{
 /* image container ending */
 /* container starting */
 .container .about-me{
-    padding: 20px;
-    width: 500px;
+    padding: 15px;
+    width: 550px;
     background:linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
     box-shadow: 0 0 3px rgb(201, 70, 140);
     border-radius: 10px;
-    margin-top: 20px;
+    margin-top: 50px;
     margin-left: 30px;
     transition: 0.5s;
+    font-size: 18px;
 }
 .about-me h2{
     text-align: center;
@@ -149,6 +150,12 @@ hr{
     border-radius: 10px;
     width: 45%;
     transition: 0.5s;
+}
+.project1-details span{
+    color: #6cbbef;
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
 }
 .project1-container .project1-details:hover{
     box-shadow: 0 0 9px rgb(201, 70, 140);
