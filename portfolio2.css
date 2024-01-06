@@ -157,6 +157,9 @@ hr{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
 }
+.project1-details .blog{
+    text-decoration: none;
+}
 .project1-container .project1-details:hover{
     box-shadow: 0 0 9px rgb(201, 70, 140);
     transform: scale(1.03);
