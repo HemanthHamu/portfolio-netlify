@@ -183,23 +183,68 @@ hr{
     text-align: center;
 }
 .skills{
+    max-width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding: 20px;
-    gap: 20px;
+    gap: 50px;
     justify-content: center;
     margin-top: 50px;
+    margin: auto;
 }
-.skills p {
-    width: 40%;
-    background:linear-gradient(45deg,#EEDEDE,#77c2f5);
-    font-size: 25px;
-    padding: 11px;
-    text-align: center;
-    color: #051d2d;
-    font-weight: bolder;
-    border-radius: 10px;
+.skills .image{
+    border: none;
+    padding: 30px;
+    border-radius: 50%;
+    background:linear-gradient(10deg,#fff,#BBF7D0);
+    opacity: 0.7;
+    transition: 0.5s;
+    animation: change 7.5s linear infinite ;
+}
+@keyframes change{
+    0% { box-shadow: 0 0 2px #fff; }
+    
+    25% { box-shadow: 0 0 6px #fff; background: linear-gradient(10deg, #fff, #BBF7D0); }
+    
+    50% { box-shadow: 0 0 6px #fff; background: linear-gradient(10deg, #fff, #BBF7D0); }
+    
+    75% { box-shadow: 0 0 10px #3498db; background: linear-gradient(10deg, #fff, #BBF7D0); }
+    
+    100% { box-shadow: 0 0 10px #3498db; background: linear-gradient(10deg, #000, #333); }
+}
+.skills .image:nth-child(1) {
+    animation-delay: 0.5s; 
+}
+.skills .image:nth-child(2) {
+    animation-delay: 1.5s; 
+}
+.skills .image:nth-child(3) {
+    animation-delay: 2.5s; 
+}
+.skills .image:nth-child(4) {
+    animation-delay: 3.5s; 
+}
+.skills .image:nth-child(5) {
+    animation-delay: 4.5s; 
+}
+.skills .image:nth-child(6) {
+    animation-delay: 5.5s; 
+}
+.skills .image:nth-child(7) {
+    animation-delay: 6.5s; 
+}
+.skills .image:nth-child(8) {
+    animation-delay: 7.5s; 
+}
+.skills .image:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.skills img{
+    width: 150px;
+    height: 150px;
 }
 /* contact form starting */
 .contact-form {
@@ -351,11 +396,17 @@ footer {
          }
          .skills{
             display: flex;
-            gap: 1px;
+            justify-content: space-around;
+            max-width: 100%;
+            width: 95%;
          }
-         .skills p {
-            width: 360px;
+         .skills .image{
+            margin-bottom: 20px;
          }
+         .skills img{
+            width: 80px;
+            height: 80px;
+        }
          .contact-form{
             max-width: 100%;
             width: 69%;
