@@ -5,13 +5,12 @@ body {
     padding: 0;
     box-sizing: border-box;
     background: linear-gradient(450deg,#0E1226,#251B4F);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:Arial, sans-serif;
     color: #fff;
     padding-top: 80px;
         }
  /* header starting */
 header {
-    color: #53F45E;
     background: linear-gradient(450deg,#0E1226,#251B4F);
     text-align: center;
     width: 100%;
@@ -21,6 +20,9 @@ header {
        }
 hr{
     border: 1px solid white;
+}
+.menu-icon{
+    display: none;
 }
 .navbar{
     display: flex;
@@ -50,6 +52,9 @@ hr{
 }
 .navbar .cv:hover{
     background-color: #1e53cf;
+}
+.mobile-links{
+    display: none;
 }
 /* header ending */
 /* image container starting */
@@ -296,6 +301,9 @@ hr{
 .submit-btn:hover {
    background-color: #3c22a3;
 }
+.top{
+    display: none;
+}
 .social-media{
     display: flex;
     justify-content: space-around;
@@ -326,176 +334,164 @@ footer {
        }
  
 @media (max-width:768px) {
-        body{
-            margin: 0;
-            left: 0;
-        }
-        .navbar{
-            display: grid;
-            grid-template-columns: repeat(3,110px);
-            margin-left: -1px;
-            padding: 1px;
-            gap: 10px;
-            width: 100%;
-        }
-        .navbar a{
-            font-size: 15px;
-            margin-left: 20px;
-            border-radius: 10px;
-            background-color: #1c1340;
-        }
-        .navbar a:hover{
-            border: 0.1px solid #fff;
-        }
-        .navbar .cv{
-            border: none;
-            margin-left: 20px;
-        }
-        .image-container{
-            max-width: 100%;
-            width: 70%;
-        }
-        .image-container .my-image{
-            margin-top: -130px;
-        }
-        .my-image .image-adjustment{
-            margin: auto;
-        }
-        .image-container h1{
-            font-size: 43px;
-        }
-        .container .about-me{
-            max-width: 100%;
-            width: 80%;
-            margin: auto;
-        }
-        .project1-container{
-            max-width: 100%;
-            width: 90%;
-            margin: 30px auto;
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-        }
-        .project1-container video{
-            max-width: 100%;
-            width: 100%;
-            height: 400px;
-        }
-        .project1-container video:hover{
-            box-shadow: 0 0 10px #fff;
-        }
-        .project1-container .project1-details{
-            max-width: 100%;
-            width: 100%;
-            padding: 10px;
-        }
-         .project1-details p {
-            font-size: 18px;
-            text-align: left;
-         }
-         .skills{
-            display: flex;
-            justify-content: space-around;
-            max-width: 100%;
-            width: 95%;
-         }
-         .skills .image{
-            margin-bottom: 20px;
-         }
-         .skills img{
-            width: 80px;
-            height: 80px;
-        }
-         .contact-form{
-            max-width: 100%;
-            width: 69%;
-         }
-         .contact-form p {
-            font-size: 55px;
-         }
-         .contact-form .hr-input{
-            margin-left: 5px;
-            width: 100%;
-            padding: 5px;
-            font-size: 20px;
-         }
-         .submit-btn{
-            margin-left: 5px;
-            width: 100%;
-         }
+    body{
+        margin: 0;
+        left: 0;
+        font-family: Arial, Helvetica, sans-serif;
     }
-    @media (max-width:1024px) {
-       
-        .navbar{
-            display: grid;
-            grid-template-columns: repeat(3,120px);
-            margin-left: -30px;
-            padding: 10px;
-            gap: 10px;
-        }
-        .navbar a{
-            font-size: 15px;
-            margin-left: 20px;
-            border-radius: 10px;
-            width: 90px;
-        }
-        .navbar a:hover{
-            border: 0.1px solid #fff;
-        }
-        .navbar .cv{
-            width: 350px;
-            border: none;
-        }
-        .navbar .cv:hover{
-            background-color: #1e53cf;
-        }
-        .image-container{
-            margin: 200px auto 30px;
-            max-width: 100%;
-            width: 60%;
-        }
-        .image-container .my-image{
-            margin-top: -130px;
-        }
-        .my-image .image-adjustment{
-            margin: auto;
-        }
-        .image-container h1{
-            font-size: 43px;
-        }
-        .container .about-me{
-           max-width: 100%;
-           width: 80%;
-           margin: auto;
-        }
-        .project1-container{
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-            justify-content: space-around;
-            max-width: 100%;
-            width: 90%;
-            margin: 30px auto;
-        }
-        .project1-container video{
-            max-width: 100%;
-            width: 100%;
-         }
-        .project1-container .project1-details{
-            max-width: 100%;
-            width: 100%;
-            padding: 10px;
-            margin: auto;
-        }
-         .project1-details p {
-            font-size: 18px;
-         }
-         .skills{
-            display: flex;
-            gap: 10px;
-         }
-         .skills p {
-            width: 360px;
-         }
+    .navbar {
+        display: none;
+      }
+      header{
+        position: absolute;
+        background: linear-gradient(450deg,#333,rgb(8, 103, 103));
+      }
+    .menu-icon {
+        max-width: 100%;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 30px;
+        cursor: pointer;
+      }
+    .menu-icon p {
+        border-radius: 10px;
+        animation: textchange 2s linear 2;
     }
+    @keyframes textchange {
+        0%{color:#fff}
+        100%{color: rgb(13, 84, 84);transform: scale(1.1);}
+        
+    }
+    .mobile-links {
+        transition: 0.5s;
+        display: none; 
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        background: linear-gradient(450deg,#222b58,#362770);
+        position: absolute;
+        top: 120px;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        padding: 20px; 
+      }
+    .mobile-links a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+      }
+    .mobile-links a:hover{
+        background: linear-gradient(450deg,#0E1226,#251B4F);
+      }
+      .mobile-links .cv{
+        background-color: #2764F1;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-weight: bolder;
+        border: none;
+        outline: none;
+      }
+      .navbar .cv:hover{
+        background-color: #1e53cf;
+    }
+    .line{
+        display: none;
+      }
+    .image-container{
+        max-width: 100%;
+        width: 70%;
+    }
+    .image-container .my-image{
+        margin-top: -130px;
+    }
+    .my-image .image-adjustment{
+        margin: auto;
+    }
+    .image-container h1{
+        font-size: 43px;
+    }
+    .container .about-me{
+        max-width: 100%;
+        width: 80%;
+        margin: 30px auto;
+    }
+    .project1-container{
+        max-width: 100%;
+        width: 90%;
+        margin: 30px auto;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .project1-container video{
+        max-width: 100%;
+        width: 95%;
+        height: 400px;
+    }
+    .project1-container video:hover{
+        box-shadow: 0 0 10px #fff;
+    }
+    .project1-container .project1-details{
+        max-width: 100%;
+        width: 90%;
+        padding: 10px;
+    }
+     .project1-details p {
+        font-size: 18px;
+        text-align: left;
+     }
+     .skills{
+        display: flex;
+        justify-content: space-around;
+        max-width: 100%;
+        width: 95%;
+     }
+     .skills .image{
+        margin-bottom: 20px;
+     }
+     .skills img{
+        width: 80px;
+        height: 80px;
+    }
+     .contact-form{
+        max-width: 100%;
+        width: 69%;
+     }
+     .contact-form p {
+        font-size: 55px;
+     }
+     .contact-form .hr-input{
+        margin-left: 5px;
+        width: 100%;
+        padding: 5px;
+        font-size: 20px;
+     }
+     .submit-btn{
+        margin-left: 5px;
+        width: 100%;
+     }
+     .top{
+        display:inline;
+        position: fixed;
+        bottom: 190px;
+        right: 10px;
+      
+     }
+     .top i{
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 50%;
+        font-size: 40px;
+     }
+     .top img{
+        width: 50px;
+        height:50px;
+     }
+}
