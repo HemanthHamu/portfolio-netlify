@@ -1,0 +1,64 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(450deg,#7586d7,#5c49a8);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+}
+header p{
+    color: rgb(157, 217, 245);
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px auto;
+    max-width: 800px;
+    gap: 10px;
+    padding: 10px;
+}
+.container hr{
+    border : 2px solid #fff;
+    width: 100%;
+    margin-top: -10px;
+}
+
+.certification {
+    background-color: #3b3636;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.certification h3{
+    background-color: rgb(86, 81, 81);
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 600px;
+    font-family: 'Arial';
+    word-spacing: 1px;
+}
+.certification p {
+    font-size: 19px;
+    letter-spacing: 1px;
+}
+.certification a{
+    color: white;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
