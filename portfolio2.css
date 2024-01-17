@@ -100,16 +100,18 @@ hr{
 .container .about-me{
     padding: 15px;
     width: 550px;
-    background:linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
-    box-shadow: 0 0 3px rgb(201, 70, 140);
+    background:linear-gradient(10deg,#0E1226,#251B4F);
+    box-shadow: 0 0 5px #a28fee;
     border-radius: 10px;
     margin-top: 50px;
     margin-left: 30px;
     transition: 0.5s;
     font-size: 18px;
+    color: #d3caf5;
 }
 .about-me h2{
     text-align: center;
+    color: #fff;
 }
 .about-me p {
     letter-spacing: 1px;
@@ -133,8 +135,8 @@ hr{
 }
 .project1-container video{
     border-radius: 10px;
-    border: 1px solid #fff;
-    box-shadow: 0 0 3px rgb(246, 245, 245);
+    border: 1px solid #a28fee;
+    box-shadow: 0 0 2px #a28fee;
     width: 45%;
     cursor: pointer;
     transition: 0.5s;
@@ -144,17 +146,18 @@ hr{
     transition: 0.5s;
 }
 .project1-container video:focus{
-    box-shadow: 0 0 9px #fff;
+    box-shadow: 0 0 9px #a28fee;
 }
 .project1-container .project1-details{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background: linear-gradient(35deg,rgb(12, 12, 12),rgb(103, 6, 58));
-    box-shadow: 0 0 3px rgb(201, 70, 140);
+    background:linear-gradient(10deg,#0E1226,#251B4F);
+    box-shadow: 0 0 2px #a28fee;
     border-radius: 10px;
     width: 45%;
     transition: 0.5s;
+    color: #d0c5f4;
 }
 .project1-details span{
     color: #6cbbef;
@@ -166,7 +169,7 @@ hr{
     text-decoration: none;
 }
 .project1-container .project1-details:hover{
-    box-shadow: 0 0 9px rgb(201, 70, 140);
+    box-shadow: 0 0 9px #a28fee;
     transform: scale(1.03);
     transition: 0.5s;
 
@@ -344,7 +347,7 @@ footer {
       }
       header{
         position: absolute;
-        background: linear-gradient(450deg,#333,rgb(8, 103, 103));
+        background:linear-gradient(10deg,#0E1226,#251B4F);
       }
     .menu-icon {
         max-width: 100%;
@@ -371,7 +374,7 @@ footer {
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        background: linear-gradient(450deg,#222b58,#362770);
+        background:linear-gradient(10deg,#0E1226,#251B4F);
         position: absolute;
         top: 120px;
         right: 0;
@@ -381,13 +384,13 @@ footer {
       }
     .mobile-links a {
         text-decoration: none;
-        color: #fff;
+        color: #d0c6f8;
         padding: 10px 20px;
         font-size: 20px;
         border-radius: 10px;
       }
-    .mobile-links a:hover{
-        background: linear-gradient(450deg,#0E1226,#251B4F);
+      .mobile-links a:hover{
+        background: linear-gradient(450deg,#232d60,#322661);
       }
       .mobile-links .cv{
         background-color: #2764F1;
@@ -399,7 +402,7 @@ footer {
         outline: none;
         width: 350px;
       }
-      .navbar .cv:hover{
+      .mobile-links .cv:hover{
         background-color: #1e53cf;
     }
     .line{
