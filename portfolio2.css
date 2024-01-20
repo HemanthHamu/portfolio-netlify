@@ -38,8 +38,10 @@ hr{
 }
 .navbar a:hover{
     transition: 0.5s;
-    border: 1px solid rgb(251, 222, 169);
-    border-radius: 10px ;
+    transition-timing-function: ease-in-out;
+    border: none;
+    border-bottom: 2px solid rgb(251, 222, 169);
+    border-radius: 8px;
 }
 .navbar .cv{
     background-color: #2764F1;
