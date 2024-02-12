@@ -82,20 +82,19 @@ hr{
 }
 .image-container .my-image{
     width: 200px;
-    height: 200px;
+    height: 220px;
     border-radius: 50%;
-    padding: 2px;
     margin: auto;
     margin-top: -150px;
+    border: none;
     border: 1px solid #fff;
 }
 .my-image .image-adjustment{
-    background: url('selfieimage.jpg');
+    background: url('myimage.jpg');
     background-size: cover;
     width: 200px;
-    height: 200px;
+    height: 220px;
     border-radius: 50%;
-    outline: 1px solid aquamarine;
 }
 /* image container ending */
 /* container starting */
