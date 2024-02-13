@@ -166,20 +166,20 @@ hr{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
 }
-.project1-details .blog{
-    text-decoration: none;
-}
 .project1-container .project1-details:hover{
     box-shadow: 0 0 9px #a28fee;
     transform: scale(1.03);
     transition: 0.5s;
-
 }
 .project1-details p{
     font-size: 20px;
     margin-left: 10px;
+}.project1-details ul{
+    font-size: 18px;
+    word-spacing: 5px;
 }
 .project1-details a{
+    text-decoration: underline;
     color: #fff;
 }
 .project1-details a:hover{
