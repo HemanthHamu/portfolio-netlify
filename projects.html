@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #645db7;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: #fff;
+      }
+      .projects {
+        background-color: #3b3636;
+        max-width: 100%;
+        width: 40%;
+        margin: 100px auto;
+        padding: 10px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: relative;
+      }
+      .projects .project {
+        display: flex;
+        margin-left: 30px;
+        align-items: center;
+        gap: 20px;
+      }
+      .project p {
+        font-size: 30px;
+      }
+      .project a {
+        color: #fff;
+        font-size: 25px;
+        position: absolute;
+        right: 20px;
+        background-color: #565151;
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: 0.5s;
+      }
+      .project a:hover {
+        background-color: #433f3f;
+        transition: 0.5s;
+        box-shadow: 0 0 5px #fff;
+      }
+      .project a:focus{
+        background-color: #fff;
+        color: #000;
+        box-shadow: 0 0 5px yellow;
+      }
+      @media (max-width:768px){
+        .projects{
+          max-width: 100%;
+          width: 90%;
+          margin-right: 20px;
+        }
+        .projects .project{
+          margin-left: 0px;
+        }
+        .project p{
+          font-size: 20px;
+        }
+        .project a{
+          position: absolute;
+          right: 5px;
+          padding: 5px;
+          font-size: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="projects">
+      <div class="project">
+        <p>Blog-Website </p>
+        <a href="https://blogapp586.cyclic.app/">Click here</a>
+      </div>
+      <div class="project">
+        <p>Todo-List </p>
+        <a href="https://todoapp586.vercel.app/">Click here</a>
+      </div>
+      <div class="project">
+        <p>Weather-Website </p>
+        <a href="https://weatherapp586.vercel.app/">Click here</a>
+      </div>
+      <div class="project">
+        <p>Food-Website</p><br>
+        <a href="https://foodapp586.vercel.app">Click here</a>
+      </div>
+    </div>
+  </body>
+</html>
