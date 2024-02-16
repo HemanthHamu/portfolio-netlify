@@ -44,7 +44,7 @@ hr{
     border-radius: 8px;
 }
 .navbar .cv{
-    background-color: #2764F1;
+    background-color: #0798b8;
     padding: 10px;
     border-radius: 10px;
     color: #fff;
@@ -53,7 +53,7 @@ hr{
     outline: none;
 }
 .navbar .cv:hover{
-    background-color: #1e53cf;
+    background-color: #03657b;
 }
 .mobile-links{
     display: none;
@@ -365,7 +365,7 @@ footer {
         background: linear-gradient(450deg,#232d60,#322661);
       }
       .mobile-links .cv{
-        background-color: #2764F1;
+        background-color: #04839f;
         padding: 10px;
         border-radius: 10px;
         color: #fff;
@@ -374,9 +374,6 @@ footer {
         outline: none;
         width: 350px;
       }
-      .mobile-links .cv:hover{
-        background-color: #1e53cf;
-    }
     .line{
         display: none;
       }
