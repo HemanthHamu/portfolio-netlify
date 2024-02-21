@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2642722202321455"
-     crossorigin="anonymous"></script>
     <link rel="stylesheet" href="portfolio2.css">
+    <link rel=" shortcut icon" href="logo.png" type="image/x-icon">
     <script src="https://unpkg.com/gsap@3.10.0/dist/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/2300780027.js" crossorigin="anonymous"></script>
 </head>
@@ -186,8 +185,8 @@
             <div class="contact-form">
                 <p style="text-align: center; font-size: 28px; margin-bottom: 70px;">Get in <span style="color: rgb(244, 156, 146);">Touch</span></p>
                 <form action="/success.html/" data-netlify="true" name="Your Messages" method="POST">
-                    <input type="text" id="name" class="hr-input" name="name" placeholder="Your Name" required>
-                    <input type="email" id="email" class="hr-input" name="email" placeholder="Your Email" required>
+                    <input type="text" id="name" class="hr-input" name="name" placeholder="Your Name" autocomplete="name" required>
+                    <input type="email" id="email" class="hr-input" name="email" placeholder="Your Email" autocomplete="email" required>
                     <textarea class="hr-input" id="message" rows="4" name="message" placeholder="Enter your message here..." required></textarea><br>
                     <button type="submit"  class="submit-btn">Submit</button>
                 </form>
