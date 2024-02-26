@@ -1,10 +1,5 @@
-  // function toggleMobileLinks() {
-  //   var mobileLinks = document.querySelector('.mobile-links');
-  //   mobileLinks.style.display = (mobileLinks.style.display === 'flex') ? 'none' : 'flex';
-  // }
-
-
-  function toggleMobileLinks() {
+const cvContainer = document.getElementById('cv-container')
+function toggleMobileLinks() {
     var mobileLinks = document.querySelector('.mobile-links');
     mobileLinks.style.display = (mobileLinks.style.display === 'flex') ? 'none' : 'flex';
 }
@@ -19,5 +14,5 @@ navbarLinks.forEach(function(link) {
 });
 
 function showCV(){
-    
+    cvContainer.style.display = "block"
 }

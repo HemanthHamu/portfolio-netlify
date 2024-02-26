@@ -57,6 +57,13 @@ hr{
 .navbar .cv:hover{
     background-color: #03657b;
 }
+#cv-container{
+    position: fixed;
+    left: 20%;
+    display: none;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.5);
+}
 .mobile-links{
     display: none;
 }
