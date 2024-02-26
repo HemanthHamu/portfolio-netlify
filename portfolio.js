@@ -1,4 +1,6 @@
-const cvContainer = document.getElementById('cv-container')
+const cvContainer = document.getElementById('cv-container');
+const cvContainerMain = document.querySelector('.cv-container-main');
+const cvButton = document.querySelector('.cv');
 function toggleMobileLinks() {
     var mobileLinks = document.querySelector('.mobile-links');
     mobileLinks.style.display = (mobileLinks.style.display === 'flex') ? 'none' : 'flex';
@@ -9,10 +11,23 @@ var navbarLinks = document.querySelectorAll('.mobile-links a');
 navbarLinks.forEach(function(link) {
     link.addEventListener('click', function() {
         var mobileLinks = document.querySelector('.mobile-links');
-        mobileLinks.style.display = 'none'; // Hide mobile links when a link is clicked
+        mobileLinks.style.display = 'none'; 
     });
 });
 
-function showCV(){
-    cvContainer.style.display = "block"
+cvButton.addEventListener('click',()=>{
+    if(cvContainerMain.style.display==="none"  || cvContainerMain.style.display === ""){
+        cvContainerMain.style.display = "block";
+    }
+    else{
+        cvContainerMain.style.display = "none";
+    }
+})
+function hideCV(){
+    if(cvContainerMain.style.display==="block"){
+        cvContainerMain.style.display = "none"
+    }
+    else{
+        cvContainerMain.style.display = "block"
+    }
 }

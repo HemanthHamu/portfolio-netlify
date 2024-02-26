@@ -23,11 +23,13 @@
             <a href="https://hemanthwebdev.blogspot.com/">Blogs</a>
             <a href="mailto:sahukarihemanth586@gmail.com">Contact</a>
             <a href="#about-me">About</a>
-            <!-- <button onclick="showCV()" class="cv">View CV</button> -->
-            <a href="resume/RESUME UPDATED (WEBDEV).pdf" download class="cv">Download CV</a>
+            <button  class="cv">View CV</button>
     </nav>
-    <div id="cv-container">
-             <iframe src="resume/RESUME UPDATED (WEBDEV).pdf" width="800px" height="500px" frameborder="0"><p>Resume</p></iframe>
+    <div class="cv-container-main">
+        <div id="cv-container">
+            <button class="x-mark" onclick="hideCV()">X</button>
+            <iframe src="resume/RESUME UPDATED (WEBDEV).pdf"><p>Resume</p></iframe>
+        </div>
     </div>
     <hr class="line" style="border: 1px solid #ef9696;">
     <nav class="mobile-links">
@@ -38,7 +40,7 @@
         <a href="https://hemanthwebdev.blogspot.com/">Blogs</a>
         <a href="mailto:sahukarihemanth586@gmail.com">Contact</a>
         <a href="#about-me">About</a>
-        <a href="RESUME UPDATED (WEBDEV).pdf" download class="cv">Download CV</a>
+        <a href="resume/RESUME UPDATED (WEBDEV).pdf" download class="cv">Download CV</a>
     </nav>
 </header>
 <main>
@@ -197,7 +199,7 @@
                 </form>
             </div>
             <div class="top">
-                <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+                <a href="#"><i title="back to top" class="fa-solid fa-arrow-up"></i></a>
             </div>
             <hr>
             <div class="social-media">

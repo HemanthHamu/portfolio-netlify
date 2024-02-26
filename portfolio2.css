@@ -57,12 +57,42 @@ hr{
 .navbar .cv:hover{
     background-color: #03657b;
 }
-#cv-container{
-    position: fixed;
-    left: 20%;
+.cv-container-main{
     display: none;
-    z-index: 999;
-    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    padding: 30px;
+    max-width: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    margin-top: -70px;
+}
+#cv-container{
+    width: 50%;
+    margin: auto;
+}
+#cv-container .x-mark{
+    position: absolute;
+    top: 30px;
+    right: 100px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    font-size: 25px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    width: 70px;
+}
+#cv-container .x-mark:hover{
+    background-color: #000;
+    color: #fff;
+}
+#cv-container iframe{
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 0 10px #fff;
+    width: 100%;
+    height: 700px;
 }
 .mobile-links{
     display: none;
