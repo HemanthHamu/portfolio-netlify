@@ -51,6 +51,8 @@ hr{
     font-weight: bolder;
     border: none;
     outline: none;
+    font-size: 25px;
+    cursor: pointer;
 }
 .navbar .cv:hover{
     background-color: #03657b;
@@ -90,7 +92,7 @@ hr{
     border: 1px solid #fff;
 }
 .my-image .image-adjustment{
-    background: url('myimage.jpg');
+    background: url('/images/myimage.jpg');
     background-size: cover;
     width: 200px;
     height: 220px;

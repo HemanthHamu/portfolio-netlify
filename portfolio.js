@@ -17,3 +17,7 @@ navbarLinks.forEach(function(link) {
         mobileLinks.style.display = 'none'; // Hide mobile links when a link is clicked
     });
 });
+
+function showCV(){
+    
+}
