@@ -1,6 +1,7 @@
 const cvContainer = document.getElementById('cv-container');
 const cvContainerMain = document.querySelector('.cv-container-main');
 const cvButton = document.querySelector('.cv');
+const year = document.getElementById('year');
 function toggleMobileLinks() {
     var mobileLinks = document.querySelector('.mobile-links');
     mobileLinks.style.display = (mobileLinks.style.display === 'flex') ? 'none' : 'flex';
@@ -31,3 +32,5 @@ function hideCV(){
         cvContainerMain.style.display = "block"
     }
 }
+const d = new Date()
+year.innerHTML = d.getFullYear()
