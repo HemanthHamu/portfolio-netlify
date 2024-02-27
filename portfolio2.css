@@ -274,11 +274,11 @@ hr{
     padding: 30px;
     background: linear-gradient(450deg,#0E1226,#251B4F);
     border-radius: 8px;
-    box-shadow: 0 0 4px #a28fee;
+    box-shadow: 0 0 2px grey;
     margin: 50px auto;
 }
 .contact-form:hover{
-    box-shadow: 0 0 10px #ab9aef;
+    box-shadow: 0 0 4px grey;
 }
 
 .hr-input {
