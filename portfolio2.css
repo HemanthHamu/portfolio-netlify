@@ -350,6 +350,7 @@ footer {
     body{
         margin: 0;
         left: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
     .navbar {
         display: none;
