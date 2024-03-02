@@ -16,7 +16,6 @@ header p{
     color: rgb(157, 217, 245);
     font-size: 28px;
 }
-
 .container {
     display: flex;
     flex-direction: column;

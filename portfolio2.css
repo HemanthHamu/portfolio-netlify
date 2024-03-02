@@ -42,6 +42,10 @@ hr{
     border-bottom: 2px solid rgb(251, 222, 169);
     border-radius: 8px;
 }
+.navbar a:active{
+    background-color: #fff;
+    color: #000;
+}
 .navbar .cv{
     background-color: #0798b8;
     padding: 10px;
