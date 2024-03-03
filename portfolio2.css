@@ -109,7 +109,7 @@ hr{
     box-shadow: 0 0 5px #a28fee;
     max-width: 100%;
     width: 70%;
-    margin: 120px auto 0px;
+    margin: 150px auto;
     border-radius: 20px;
 }
 .image-container .h {
@@ -147,6 +147,7 @@ hr{
     box-shadow: 0 0 5px #a28fee;
     border-radius: 10px;
     margin-top: 50px;
+    margin-bottom: 80px;
     margin-left: 30px;
     transition: 0.5s;
     font-size: 18px;
@@ -245,16 +246,15 @@ hr{
   /* Apply styling for the lines */
   .skills .image {
     padding: 10px;
-    animation: change 3s linear infinite;
   }
-  @keyframes change{
-    50%{border: 1px solid #fff;}
-}
 .image img{
     width: 200px;
     height: 200px;
     margin: auto;
     animation: move 5s linear infinite;
+    box-shadow: 0 0 1px #59628c;
+    border-radius: 10px;
+    padding: 15px;
   }
   @keyframes move {
         0%{transform: rotate(0deg);}
@@ -348,7 +348,7 @@ footer {
     padding: 1em 0;
     width: 100%;
     margin-top: 20px;
-       }
+}
  
 @media (max-width:768px) {
     body{
@@ -356,23 +356,21 @@ footer {
         left: 0;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    .navbar {
-        display: none;
-      }
-      header{
+    header{
         position: absolute;
         background:linear-gradient(10deg,#0E1226,#251B4F);
-      }
+        padding: 20px;
+    }
     .menu-icon {
         max-width: 100%;
         width: 90%;
-        margin: auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        margin: auto;
         font-size: 30px;
         cursor: pointer;
-      }
+    }
     .menu-icon p {
         border-radius: 10px;
         animation: textchange 2s linear 2;
@@ -381,6 +379,9 @@ footer {
         0%{color:#fff}
         100%{color: rgb(13, 84, 84);transform: scale(1.1);}
         
+    }
+    .navbar {
+        display: none;
     }
     .mobile-links {
         transition: 0.5s;
@@ -468,20 +469,14 @@ footer {
         justify-content: center;
         max-width: 100%;
         width: 93%;
-        border-radius: 10px;
-        background: linear-gradient(450deg,#bfc8f5,#ada3d6);
-        box-shadow: 0 0 5px #fff;
      }
      .skills .image{
         padding: 10px;
-        animation: change 2s linear infinite;
-     }
-     @keyframes change {
-        50%{border: 1px solid #000;}
      }
      .skills img{
         width: 140px;
         height: 140px;
+        box-shadow: 0 0 2px grey;
     }
      .contact-form{
         max-width: 100%;
