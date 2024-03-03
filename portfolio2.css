@@ -424,7 +424,8 @@ footer {
       }
     .image-container{
         max-width: 100%;
-        width: 70%;
+        width: 90%;
+        margin-bottom: 30px;
     }
     .image-container .my-image{
         margin-top: -130px;
@@ -437,7 +438,7 @@ footer {
     }
     .container .about-me{
         max-width: 100%;
-        width: 80%;
+        width: 90%;
         margin: 30px auto;
     }
     .project1-container{
@@ -450,7 +451,7 @@ footer {
     }
     .project1-container video{
         max-width: 100%;
-        width: 95%;
+        width: 100%;
         height: 400px;
     }
     .project1-container video:hover{
@@ -458,7 +459,7 @@ footer {
     }
     .project1-container .project1-details{
         max-width: 100%;
-        width: 90%;
+        width: 100%;
         padding: 10px;
     }
      .project1-details p {
@@ -482,7 +483,7 @@ footer {
     }
      .contact-form{
         max-width: 100%;
-        width: 69%;
+        width: 90%;
      }
      .contact-form p {
         font-size: 55px;
@@ -500,13 +501,13 @@ footer {
      .top{
         display:inline;
         position: fixed;
-        bottom: 190px;
+        bottom: 150px;
         right: 5px;
         opacity: 0.5;
      }
      .top i{
         background-color: #fff;
-        padding: 20px;
+        padding: 10px;
         border-radius: 50%;
         font-size: 40px;
      }
