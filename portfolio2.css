@@ -249,12 +249,38 @@ hr{
   .skills .image {
     padding: 10px;
   }
-.image img{
+  .skills .image:nth-child(1) .skill-image {
+    box-shadow: 0 0 3px  #FF651E;
+}
+
+.skills .image:nth-child(2) .skill-image {
+    box-shadow: 0 0 3px  #0065F4;
+}
+.skills .image:nth-child(3) .skill-image {
+    box-shadow: 0 0 3px #FFDF00;
+}
+.skills .image:nth-child(4) .skill-image {
+    box-shadow: 0 0 3px #5EAD46;
+}
+.skills .image:nth-child(5) .skill-image {
+    box-shadow: 0 0 3px #fff;
+}
+.skills .image:nth-child(6) .skill-image {
+    box-shadow: 0 0 3px #5EAD46;
+}
+.skills .image:nth-child(7) .skill-image {
+    box-shadow: 0 0 3px #00D8FF;
+}
+.skills .image:nth-child(8) .skill-image {
+    box-shadow: 0 0 3px #F04E2A;
+}
+
+
+.image .skill-image{
     width: 200px;
     height: 200px;
     margin: auto;
     animation: move 5s linear infinite;
-    box-shadow: 0 0 1px #59628c;
     border-radius: 10px;
     padding: 15px;
   }
