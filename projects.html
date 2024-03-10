@@ -6,13 +6,13 @@
     <title>Projects</title>
     <style>
       body {
-        background-color: #645db7;
+        background-color: #000000;
         font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
           sans-serif;
         color: #fff;
       }
       .projects {
-        background-color: #3b3636;
+        background-color: #000000;
         max-width: 100%;
         width: 40%;
         margin: 100px auto;
@@ -22,6 +22,7 @@
         flex-direction: column;
         gap: 20px;
         position: relative;
+        box-shadow: 0 0 1px #fff;
       }
       .projects .project {
         display: flex;
@@ -37,21 +38,19 @@
         font-size: 25px;
         position: absolute;
         right: 20px;
-        background-color: #565151;
+        background-color: #1f1d1d;
         padding: 10px;
         border-radius: 10px;
         text-decoration: none;
         transition: 0.5s;
       }
       .project a:hover {
-        background-color: #433f3f;
         transition: 0.5s;
         box-shadow: 0 0 5px #fff;
       }
       .project a:active{
         background-color: #fff;
         color: #000;
-        box-shadow: 0 0 5px yellow;
       }
       @media (max-width:768px){
         .projects{
