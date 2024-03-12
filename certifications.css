@@ -40,11 +40,18 @@ header p{
     border-radius: 10px;
     margin-bottom: 20px;
 }
+.certification i {
+    color: #03249a;
+    font-size: 20px;
+    background-color: #000000;
+    border-radius: 10%;
+    padding: 7px;
+}
 .certification h3{
     background-color: rgb(86, 81, 81);
     padding: 10px;
     border-radius: 5px;
-    max-width: 600px;
+    max-width: 650px;
     font-family: 'Arial';
     word-spacing: 1px;
 }
