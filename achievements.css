@@ -47,14 +47,14 @@ header p{
     margin-top: -10px;
 }
 
-.certifications {
+.achievements {
     display: flex;
     flex-direction: column;
     gap: 30px;
     width: 100%;
     margin-top: 50px;
 }
-.certifications img{
+.achievements img{
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
@@ -62,7 +62,7 @@ header p{
     border-radius: 10px;
     transition: 0.5s;
 }
-.certifications img:hover{
+.achievements img:hover{
     transform: scale(1.05);
     transition: 0.5s;
 }
