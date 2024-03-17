@@ -43,9 +43,7 @@ body {
    position: absolute;
    top: 0px;
    right: -100px;
-   /* background-color: #1D79FF; */
-   background: linear-gradient(45deg,blueviolet,deeppink);
-   box-shadow: 0 0 10px grey;
+   background-color: #1D79FF;
    padding: 10px;
    text-decoration: none;
    text-align: center;
