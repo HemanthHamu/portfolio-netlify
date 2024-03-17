@@ -7,10 +7,10 @@ body {
  .projects{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 150px;
     max-width: 100%;
     width: 40%;
-    margin: 100px auto;
+    margin: 150px auto;
  }
  h2{
     text-align: center;
@@ -24,9 +24,13 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    border: 1px solid rgb(82, 80, 80);
-    border-radius: 10px;
-    align-items: center;
+    position: relative;
+    /* align-items: center; */
+ }
+ .project:hover a{
+   transform: scale(1.1);
+   transform: rotate(90deg);
+   right: -90px;
  }
  .project img{
     width: 100%;
@@ -35,33 +39,43 @@ body {
     height: 300px;
     transition: 0.5s;
  }
- .project img:hover{
-    transform: scale(1.05);
-    transition: 0.5s;
+ .project a{
+   position: absolute;
+   top: 0px;
+   right: -100px;
+   /* background-color: #1D79FF; */
+   background: linear-gradient(45deg,blueviolet,deeppink);
+   box-shadow: 0 0 10px grey;
+   padding: 10px;
+   text-decoration: none;
+   text-align: center;
+   color: #fff;
+   font-size: 25px;
+   transition: 0.5s;
+   transform: rotate(45deg);
+   width: 35%;
+   border: none;
+   border-radius: 10px;
  }
-a{
-    width: 97%;
-    background-color: #1f1d1d;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    font-size: 25px;
-    border-radius: 20px;
-    margin: 30px 0px;
-    transition: 0.5s;
+ .project a:hover{
+   background-color: #074c8d;
+   transform: rotate(90deg);
  }
- a:hover{
-    transition: 0.5s;
-   box-shadow: 0 0 5px #375668;
- }
- a:active{
-    background-color: #fff;
-    color: #000;
-  }
+.project a:active{
+   background-color: #fff;
+   color: #000;
+}
+
  @media (max-width:768px) {
     .projects{
         max-width: 100%;
-        width: 95%;
+        width: 82%;
+        margin: 100px auto;
+    }
+    .project a{
+      width: 48%;
+      top: -20px;
+      right: -52px;
+      font-size: 20px;
     }
  }

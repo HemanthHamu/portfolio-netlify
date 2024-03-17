@@ -48,7 +48,7 @@ hr{
     color: #000;
 }
 .navbar .cv{
-    background-color: #0798b8;
+    background: linear-gradient(45deg,blueviolet,deeppink);
     padding: 10px;
     border-radius: 10px;
     color: #fff;
@@ -57,9 +57,14 @@ hr{
     outline: none;
     font-size: 25px;
     cursor: pointer;
+    box-shadow: 0 0 50px grey;
+}
+.navbar .cv:active{
+    background: linear-gradient(45deg,#fff,#fff);
+    color: #000;
 }
 .navbar .cv:hover{
-    background-color: #03657b;
+   box-shadow: none;
 }
 .cv-container-main{
     display: none;
@@ -106,17 +111,23 @@ hr{
 .image-container{
     padding: 3rem;
     position: static;
-    /* background:linear-gradient(10deg,#0E1226,#251B4F); */
     background-color: #000000;
-    /* box-shadow: 0 0 5px #a28fee; */
+    background: linear-gradient(45deg,#000000,#2a2626);
     box-shadow: 0 0 5px #3a3838;
     max-width: 100%;
     width: 70%;
     margin: 150px auto;
     border-radius: 20px;
 }
+.image-container .hello{
+    color: #16F8B6;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
 .image-container .h {
-    color: #53F45E;
+    color: #F926AE;
+    font-weight: bolder;
+    letter-spacing: 1px;
 }
 .image-container h1{
     color:rgb(250, 248, 248);
@@ -174,6 +185,7 @@ hr{
 #projects-text {
     text-align: center;
     color: #FBDEA9;
+    font-weight: bolder;
 }
 
 .project1-container{
@@ -327,8 +339,7 @@ hr{
 .hr-input {
     width: 80%;
     border: none;
-    /* border-bottom: 1px solid #a28fee; */
-    border-bottom: 1px solid rgb(36, 35, 35);
+    border-bottom: 2px solid rgb(36, 35, 35);
     outline: none;
     padding: 5px;
     margin-left: 50px;
@@ -339,7 +350,8 @@ hr{
 }
 ::placeholder{
     color: #fff;
-    opacity: 0.2;
+    opacity: 0.4;
+    font-weight: bolder;
 }
 
 .hr-input:focus {
@@ -455,8 +467,13 @@ footer {
       .mobile-links a:hover{
        background-color: #2c2a2a;
       }
+      .mobile-links a:active{
+        background-color: #fff;
+        color: #000;
+      }
       .mobile-links .cv{
-        background-color: #04839f;
+        background: linear-gradient(45deg,blueviolet,deeppink);
+        box-shadow: 0 0 10px grey;
         padding: 10px;
         border-radius: 10px;
         color: #fff;
@@ -465,6 +482,9 @@ footer {
         outline: none;
         width: 350px;
       }
+      .mobile-links .cv:hover{
+        box-shadow: none;
+      }
     .line{
         display: none;
       }
@@ -472,6 +492,7 @@ footer {
         max-width: 100%;
         width: 90%;
         margin-bottom: 30px;
+        box-shadow: 0 0 5px grey;
     }
     .image-container .my-image{
         margin-top: -130px;
@@ -486,6 +507,7 @@ footer {
         max-width: 100%;
         width: 90%;
         margin: 30px auto;
+        box-shadow: 0 0 3px grey;
     }
     .project1-container{
         max-width: 100%;
