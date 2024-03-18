@@ -35,14 +35,13 @@ body {
  .project img{
     width: 100%;
     background-size: cover;
-    border-radius: 10px;
     height: 300px;
     transition: 0.5s;
  }
  .project a{
    position: absolute;
    top: 0px;
-   right: -100px;
+   right: -110px;
    background-color: #1D79FF;
    padding: 10px;
    text-decoration: none;
