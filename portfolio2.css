@@ -48,7 +48,7 @@ hr{
     color: #000;
 }
 .navbar .cv{
-    background: linear-gradient(45deg,blueviolet,deeppink);
+    background: linear-gradient(180deg,rgb(94, 29, 154),#000000);
     padding: 10px;
     border-radius: 10px;
     color: #fff;
@@ -57,7 +57,7 @@ hr{
     outline: none;
     font-size: 25px;
     cursor: pointer;
-    box-shadow: 0 0 50px grey;
+    box-shadow: 0 0 30px grey;
 }
 .navbar .cv:active{
     background: linear-gradient(45deg,#fff,#fff);
@@ -263,6 +263,12 @@ hr{
     text-align: center;
     letter-spacing: 5px;
 }
+#skills::first-letter{
+    color: #16F8B6;
+}
+#skills2{
+    color: #16F8B6;
+}
 .skills {
     max-width: 100%;
     width: 50%;
@@ -347,6 +353,16 @@ hr{
     background: transparent;
     font-size: 25px;
     color: #fff;
+}
+
+input:valid{
+    border-bottom: 2px solid green;
+}
+input:invalid{
+    border-bottom: 2px solid red;
+}
+textarea:valid{
+    border-bottom: 2px solid green;
 }
 ::placeholder{
     color: #fff;
@@ -472,8 +488,7 @@ footer {
         color: #000;
       }
       .mobile-links .cv{
-        background: linear-gradient(45deg,blueviolet,deeppink);
-        box-shadow: 0 0 10px grey;
+        background: linear-gradient(180deg,rgb(90, 35, 142),#000000);
         padding: 10px;
         border-radius: 10px;
         color: #fff;
@@ -481,9 +496,11 @@ footer {
         border: none;
         outline: none;
         width: 350px;
+        transition: 0.5s;
       }
       .mobile-links .cv:hover{
-        box-shadow: none;
+        transform: scale(1.1);
+        transition: 0.5s;
       }
     .line{
         display: none;
