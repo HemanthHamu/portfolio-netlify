@@ -59,14 +59,17 @@ hr{
     outline: none;
     font-size: 25px;
     cursor: pointer;
-    box-shadow: 0 0 30px grey;
+    border-bottom: 2px solid rgb(94, 29, 154);
+    transition: 0.3s;
 }
 .navbar .cv:active{
     background: linear-gradient(45deg,#fff,#fff);
     color: #000;
 }
 .navbar .cv:hover{
-   box-shadow: none;
+   border-bottom: none;
+   transform: scale(1.1);
+   transition: 0.3s;
 }
 .cv-container-main{
     display: none;
@@ -121,16 +124,13 @@ hr{
     margin: 150px auto;
     border-radius: 20px;
 }
-.image-container .hello{
+.image-container .name {
     color: #16F8B6;
     font-weight: bolder;
     letter-spacing: 1px;
 }
-.image-container .h {
-    color: #F926AE;
-    font-weight: bolder;
-    letter-spacing: 1px;
-}
+
+
 .image-container h1{
     color:rgb(250, 248, 248);
     font-size: 90px;
