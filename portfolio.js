@@ -33,4 +33,4 @@ function hideCV(){
     }
 }
 const d = new Date()
-year.innerHTML = d.getFullYear()
+year.innerHTML = d.getFullYear();

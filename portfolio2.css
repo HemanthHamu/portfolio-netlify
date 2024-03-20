@@ -9,6 +9,10 @@ body {
     color: #fff;
     padding-top: 80px;
         }
+::selection{
+    color: #000;
+    background: yellow;
+}
  /* header starting */
 header {
     background-color: #000000;
