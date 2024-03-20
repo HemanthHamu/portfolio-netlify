@@ -353,7 +353,6 @@ hr{
 .contact-form .hr-input {
     border: none;
     width: 60%;
-    border-bottom: 2px solid rgb(36, 35, 35);
     outline: none;
     padding: 5px;
     margin-left: 50px;
@@ -362,17 +361,19 @@ hr{
     font-size: 25px;
     color: #fff;
     transition: 0.5s;
+    opacity: 0.5;
 }
 .contact-form .hr-input:focus{
     width: 80%;
     transition: 0.5s;
+    opacity: 1;
 }
 
 .hr-input:valid{
-    border-bottom: 2px solid green;
+    border-bottom: 1px solid green;
 }
 .hr-input:invalid{
-    border-bottom: 2px solid red;
+    border-bottom: 1px solid red;
 }
 textarea:valid{
     border-bottom: 2px solid green;
@@ -381,11 +382,6 @@ textarea:valid{
     color: #fff;
     opacity: 0.4;
     font-weight: bolder;
-}
-
-.hr-input:focus {
-    /* border-bottom:3px solid #3498db; */
-    border-bottom: 3px solid #fff;
 }
 .submit-btn{
    width: 80%;
@@ -595,9 +591,12 @@ footer {
         margin-left: 5px;
         padding: 5px;
         font-size: 20px;
+        width: 80%;
+        opacity: 0.5;
      }
      .contact-form .hr-input:focus{
         width: 100%;
+        opacity: 1;
      }
      .submit-btn{
         margin-left: 5px;
