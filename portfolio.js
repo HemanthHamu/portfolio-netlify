@@ -3,15 +3,15 @@ const cvContainerMain = document.querySelector('.cv-container-main');
 const cvButton = document.querySelector('.cv');
 const year = document.getElementById('year');
 function toggleMobileLinks() {
-    var mobileLinks = document.querySelector('.mobile-links');
+    var mobileLinks = document.querySelector('.navbar');
     mobileLinks.style.display = (mobileLinks.style.display === 'flex') ? 'none' : 'flex';
 }
 
 // Add an event listener to each navbar link
-var navbarLinks = document.querySelectorAll('.mobile-links a');
+var navbarLinks = document.querySelectorAll('.navbar a');
 navbarLinks.forEach(function(link) {
     link.addEventListener('click', function() {
-        var mobileLinks = document.querySelector('.mobile-links');
+        var mobileLinks = document.querySelector('.navbar');
         mobileLinks.style.display = 'none'; 
     });
 });

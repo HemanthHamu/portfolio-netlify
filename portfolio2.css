@@ -57,7 +57,8 @@ hr{
     color: #000;
 }
 .navbar .cv{
-    background: linear-gradient(180deg,rgb(94, 29, 154),#000000);
+    /* background: linear-gradient(180deg,rgb(94, 29, 154),#000000); */
+    background: linear-gradient(180deg,#868be8,blueviolet);
     padding: 10px;
     border-radius: 10px;
     color: #fff;
@@ -66,7 +67,7 @@ hr{
     outline: none;
     font-size: 25px;
     cursor: pointer;
-    border-bottom: 2px solid rgb(94, 29, 154);
+    /* border-bottom: 2px solid rgb(94, 29, 154); */
     transition: 0.3s;
 }
 .navbar .cv:active{
@@ -124,7 +125,7 @@ hr{
     padding: 3rem;
     position: static;
     background-color: #000000;
-    background: linear-gradient(45deg,#000000,#2a2626);
+    background: linear-gradient(to left,#000000,#111111);
     box-shadow: 0 0 5px #3a3838;
     max-width: 100%;
     width: 70%;
@@ -132,18 +133,26 @@ hr{
     border-radius: 20px;
 }
 .image-container .name {
-    color: #16F8B6;
+    color: #8774E6;
     font-weight: bolder;
     letter-spacing: 1px;
+    animation: nameAnimation 3s linear infinite;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-
+@keyframes nameAnimation {
+    0%{color: #8774E6;}
+    25%{color: #0c392b;} 
+}
+.image-container .name:hover{
+    transform: scale(1.1);
+}
 .image-container h1{
     color:rgb(250, 248, 248);
-    font-size: 90px;
+    font-size: 85px;
     border: none;
     text-align: center;
     letter-spacing: 7px;
+    font-weight: bolder;
 }
 .image-container .my-image{
     width: 200px;
@@ -465,7 +474,7 @@ footer {
     .navbar {
         display: none;
     }
-    .mobile-links {
+    .navbar {
         transition: 0.5s;
         display: none; 
         flex-direction: column;
@@ -481,7 +490,7 @@ footer {
         z-index: 1;
         padding: 20px; 
       }
-    .mobile-links a {
+    .navbar a {
         text-decoration: none;
         letter-spacing: 2px;
         color: grey;
@@ -489,15 +498,17 @@ footer {
         font-size: 20px;
         border-radius: 10px;
       }
-      .mobile-links a:hover{
+      .navbar a:hover{
        background-color: #2c2a2a;
+       border-bottom: none;
       }
-      .mobile-links a:active{
+      .navbar a:active{
         background-color: #fff;
         color: #000;
       }
-      .mobile-links .cv{
-        background: linear-gradient(180deg,rgb(90, 35, 142),#000000);
+      .navbar .cv{
+        /* background: linear-gradient(180deg,rgb(90, 35, 142),#000000); */
+        background: linear-gradient(180deg,#747BFF,blueviolet);
         padding: 10px;
         border-radius: 10px;
         color: #fff;
@@ -507,10 +518,54 @@ footer {
         width: 350px;
         transition: 0.5s;
       }
-      .mobile-links .cv:hover{
+      .navbar .cv:hover{
         transform: scale(1.1);
         transition: 0.5s;
       }
+      .cv-container-main{
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        display: none;
+        position: relative;
+        padding: 30px;
+        background-color: rgba(0,0,0,0.8);
+        margin-top: -70px;
+        z-index: 999;
+    }
+    #cv-container{
+        max-width: 100%;
+        width: 100%;
+        margin: auto;
+    }
+    #cv-container .x-mark{
+        position: absolute;
+        left: 30px;
+        right: 30px;
+        background-color: #000;
+        color: #fff;
+        cursor: pointer;
+        font-size: 25px;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        width: 70px;
+    }
+    #cv-container .x-mark:hover{
+        background-color: #fff;
+        color: #000;
+    }
+    #cv-container .x-mark:active{
+        background-color: #000;
+        color: #fff;
+    }
+    #cv-container iframe{
+        border-radius: 10px;
+        border: none;
+        box-shadow: 0 0 10px #fff;
+        width: 100%;
+        height: 700px;
+    }
     .line{
         display: none;
       }
@@ -519,6 +574,7 @@ footer {
         width: 90%;
         margin-bottom: 30px;
         box-shadow: 0 0 5px grey;
+        font-weight: bolder;
     }
     .image-container .my-image{
         margin-top: -130px;
@@ -528,6 +584,19 @@ footer {
     }
     .image-container h1{
         font-size: 43px;
+        color:#f1ebef;
+        letter-spacing: 3px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    .image-container .name{
+        color: #8774E6;
+        animation: nameAnimation 3s linear infinite;
+        animation-delay: 3s;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    @keyframes nameAnimation {
+        0%{color: #8774E6;}
+        25%{color: #0b372a;}
     }
     .container .about-me{
         max-width: 100%;
