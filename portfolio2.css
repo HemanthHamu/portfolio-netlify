@@ -57,7 +57,6 @@ hr{
     color: #000;
 }
 .navbar .cv{
-    /* background: linear-gradient(180deg,rgb(94, 29, 154),#000000); */
     background: linear-gradient(180deg,#868be8,blueviolet);
     padding: 10px;
     border-radius: 10px;
@@ -67,7 +66,6 @@ hr{
     outline: none;
     font-size: 25px;
     cursor: pointer;
-    /* border-bottom: 2px solid rgb(94, 29, 154); */
     transition: 0.3s;
 }
 .navbar .cv:active{
@@ -78,6 +76,9 @@ hr{
    border-bottom: none;
    transform: scale(1.1);
    transition: 0.3s;
+}
+.mobile-links {
+    display: none;
 }
 .cv-container-main{
     display: none;
@@ -471,10 +472,13 @@ footer {
         100%{color: rgb(13, 84, 84);transform: scale(1.1);}
         
     }
-    .navbar {
+    .navbar{
         display: none;
     }
-    .navbar {
+    .mobile-links {
+        display: none;
+    }
+    .mobile-links {
         transition: 0.5s;
         display: none; 
         flex-direction: column;
@@ -490,7 +494,7 @@ footer {
         z-index: 1;
         padding: 20px; 
       }
-    .navbar a {
+    .mobile-links a {
         text-decoration: none;
         letter-spacing: 2px;
         color: grey;
@@ -498,16 +502,15 @@ footer {
         font-size: 20px;
         border-radius: 10px;
       }
-      .navbar a:hover{
+      .mobile-links a:hover{
        background-color: #2c2a2a;
        border-bottom: none;
       }
-      .navbar a:active{
+      .mobile-links a:active{
         background-color: #fff;
         color: #000;
       }
-      .navbar .cv{
-        /* background: linear-gradient(180deg,rgb(90, 35, 142),#000000); */
+      .mobile-links .cv{
         background: linear-gradient(180deg,#747BFF,blueviolet);
         padding: 10px;
         border-radius: 10px;
@@ -518,7 +521,7 @@ footer {
         width: 350px;
         transition: 0.5s;
       }
-      .navbar .cv:hover{
+      .mobile-links .cv:hover{
         transform: scale(1.1);
         transition: 0.5s;
       }
