@@ -39,6 +39,8 @@ hr{
     font-size: 1.7rem;
     color: grey;
     padding: 10px;
+    transition: 0.2s;
+    border-radius: 10px;
 }
 .navbar a:active{
     border: 3px solid grey;
@@ -46,8 +48,9 @@ hr{
 .navbar a:hover{
     transition: 0.1s;
     border: none;
-    border-bottom: 2px solid grey;
-    border-radius: 10px;
+    background: linear-gradient(180deg,#868be8,blueviolet);
+    color: #fff;
+    transition: 0.5s;
 }
 .navbar a:focus{
     border: 2px solid grey;
@@ -217,8 +220,6 @@ hr{
 }
 .project1-container video{
     border-radius: 10px;
-    /* border: 1px solid #a28fee;
-    box-shadow: 0 0 2px #a28fee; */
     border: 1px solid #3a3838;
     box-shadow: 0 0 5px #3a3838;
     width: 45%;
@@ -238,16 +239,17 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    /* background:linear-gradient(10deg,#0E1226,#251B4F);
-    box-shadow: 0 0 2px #a28fee; */
     background-color: #000000;
-    /* box-shadow: 0 0 3px #fff; */
     border: 1px solid #fff;
     border-radius: 10px;
     width: 45%;
     transition: 0.5s;
-    /* color: #d0c5f4; */
     color: grey;
+}
+.project1-container .project1-details:hover{
+    border: none;
+    box-shadow: 0 0 10px #fff;
+    transition: 0.5s;
 }
 .project1-details span{
     /* color: #6cbbef; */
@@ -418,7 +420,7 @@ textarea:valid{
     background-color: transparent;
     padding: 15px;
 }
-.social-media a{
+.social-media .social-media-links{
     text-decoration: none;
     color: #fff;
 }
