@@ -62,7 +62,7 @@ hr{
 .navbar .cv{
     background: linear-gradient(180deg,#868be8,blueviolet);
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     color: #fff;
     font-weight: bolder;
     border: none;
@@ -74,11 +74,6 @@ hr{
 .navbar .cv:active{
     background: linear-gradient(45deg,#fff,#fff);
     color: #000;
-}
-.navbar .cv:hover{
-   border-bottom: none;
-   transform: scale(1.1);
-   transition: 0.3s;
 }
 .mobile-links {
     display: none;
