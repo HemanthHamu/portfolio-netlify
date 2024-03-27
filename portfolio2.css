@@ -251,6 +251,9 @@ hr{
     box-shadow: 0 0 10px #fff;
     transition: 0.5s;
 }
+.project1-container .project1-details ul{
+    list-style-type: square;
+}
 .project1-details span{
     /* color: #6cbbef; */
     color: #fff;
