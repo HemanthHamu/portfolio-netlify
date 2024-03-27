@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="portfolio2.css">
     <link rel=" shortcut icon" href="images/logo.png" type="image/x-icon">
     <script src="https://unpkg.com/gsap@3.10.0/dist/gsap.min.js"></script>
-    <script src="js/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://kit.fontawesome.com/2300780027.js" crossorigin="anonymous"></script>
 </head>
 <body >
@@ -18,14 +18,14 @@
         <i class="fa-solid fa-bars"></i>
     </div>
     <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="certifications.html">Certifications</a>
-            <a href="projects.html">Projects</a>
-            <a href="https://hemanthwebdev.blogspot.com/">Blogs</a>
-            <a href="achievements.html">Achievements</a>
-            <a href="#about-me">About</a>
-            <button  class="cv">View CV</button>
+            <a href="#" class="navbar-links">Home</a>
+            <a href="#skills" class="navbar-links">Skills</a>
+            <a href="certifications.html" class="navbar-links">Certifications</a>
+            <a href="projects.html" class="navbar-links">Projects</a>
+            <a href="https://hemanthwebdev.blogspot.com/" class="navbar-links">Blogs</a>
+            <a href="achievements.html" class="navbar-links">Achievements</a>
+            <a href="#about-me" class="navbar-links">About</a>
+            <button  class="cv" class="navbar-links">View CV</button>
     </nav>
     <nav class="mobile-links">
         <a href="#">Home</a>
@@ -214,14 +214,6 @@
     <footer>
         &copy; <span id="year"></span> Hemanth Sahukari
     </footer>
-    <script src="portfolio.js"></script>
-    <script>
-        gsap.from('.skills', {scrollTrigger:'.skills', duration:5, opacity:0, scale:0.5});
-        gsap.from('.navbar', { opacity: 0,y:-50,duration: 2, delay: 0.8, ease: 'bounce' });
-        gsap.from('a', { opacity: 0,duration: 3, delay: 0.8,stagger: 0.5,scale:0.7 });
-        gsap.from('h1', { opacity: 0,y:100,duration: 2, delay: 1.5, ease: 'bounce',scale:0.5 });
-        gsap.from('.container', { opacity: 0,x:-50,duration: 2, delay: 1.8, ease: 'bounce' });
-        gsap.from('.image-adjustment', { opacity: 0,x:50,duration: 2, delay: 1.2,scale:0.5, ease: 'bounce' });
-    </script>
+    <script src="portfolio.js" defer></script>
 </body> 
 </html>
