@@ -47,7 +47,7 @@ gsap.from('.social-media',{scrollTrigger:".social-media",x:500,duration:1,delay:
 
 // Defining the hover animation
 const hoverTimeline = gsap.timeline({ paused: true });
-hoverTimeline.to(cvButton, { background: "linear-gradient(to top, #3498db 100%, black 100% )", duration: 0.8 });
+hoverTimeline.to(cvButton, { background: "linear-gradient(to right, #3498db 100%, black 100%)", duration: 0.5 });
 
 // Add event listeners for mouse enter and mouse leave
 cvButton.addEventListener('mouseenter', () => {
