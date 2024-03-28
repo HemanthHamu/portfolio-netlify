@@ -39,18 +39,7 @@ gsap.from('.navbar .navbar-links', { opacity: 0,duration: 0.5, delay: 0.8,stagge
 gsap.from('.mobile-links a', { opacity: 0,duration: 3, delay: 0.8,stagger: 0.5,scale:0.7 });
 gsap.from('.image-container',{opacity:0,duration:2,delay:1.5,y:500,ease:'bounce'})
 gsap.registerPlugin(ScrollTrigger);
-gsap.from('.project1-container',{
-    scrollTrigger : {
-    trigger :".project1-container",
-    start: "top bottom",
-    end: "bottom top",
-    scrub: true,
-    once: false
-    },
-    opacity:0,
-    x:-500,
-    duration:2
-});
+gsap.from('.project1-container', {scrollTrigger:".project1-container",x:-500,duration:1,delay:0});
 gsap.from('.skills', {scrollTrigger:".skills",x:500,duration:1,delay:0});
 gsap.from('.contact-form',{scrollTrigger:".contact-form",x:-500,duration:1,delay:0,ease:"bounce"})
 gsap.from('.social-media',{scrollTrigger:".social-media",x:500,duration:1,delay:0,ease:"bounce"})
@@ -58,7 +47,7 @@ gsap.from('.social-media',{scrollTrigger:".social-media",x:500,duration:1,delay:
 
 // Defining the hover animation
 const hoverTimeline = gsap.timeline({ paused: true });
-hoverTimeline.to(cvButton, { background: "linear-gradient(to top, #3498db 100%, black 100%)", duration: 0.8 });
+hoverTimeline.to(cvButton, { background: "linear-gradient(to top, #3498db 100%, black 100% )", duration: 0.8 });
 
 // Add event listeners for mouse enter and mouse leave
 cvButton.addEventListener('mouseenter', () => {
