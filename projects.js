@@ -33,11 +33,11 @@ let shareButton = document.querySelectorAll('.share-button');
         if (heartButton.classList.contains('liked')) {
             heartButton.classList.remove('liked');
             localStorage.setItem(localStorageKey, 'false');
-            currentLikeCount--; // Decrease like count
+            currentLikeCount--; // Decrease like count if not liked
         } else {
             heartButton.classList.add('liked');
             localStorage.setItem(localStorageKey, 'true');
-            currentLikeCount++; // Increase like count
+            currentLikeCount++; // Increase like count if like
         }
 
         // Update the like count display
