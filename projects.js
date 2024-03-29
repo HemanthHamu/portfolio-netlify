@@ -1,7 +1,7 @@
 let shareButton = document.querySelectorAll('.share-button');
     shareButton.forEach(button => {
       const hoverTimeline = gsap.timeline({ paused: true });
-      hoverTimeline.to(button, { background: "linear-gradient(to bottom, #3498db 100%, black 100% )", duration: 1 });
+      hoverTimeline.to(button, { background: "linear-gradient(180deg, #242323 100%, black 100% )", duration: 1 });
       button.addEventListener('mouseenter', () => {
           hoverTimeline.play();
       });
@@ -12,7 +12,7 @@ let shareButton = document.querySelectorAll('.share-button');
         let projectLink = button.previousElementSibling.getAttribute('href');
         let encodedLink = encodeURIComponent(projectLink);
         let whatsappURL = `whatsapp://send?text=${encodedLink}`;
-        window.location.href = whatsappURL
+        window.location.href = whatsappURL;
       })
   });
 

@@ -47,7 +47,6 @@ body {
    top: 0px;
    right: -110px;
    background-color: #1D79FF;
- 
    padding: 10px;
    text-decoration: none;
    text-align: center;
@@ -72,10 +71,11 @@ body {
    font-weight: bolder;
    padding: 10px;
    border-radius: 10px;
-   background-color: #242323;
+   background-color: #3498db;
    color: #fff;
    border: none;
    cursor: pointer;
+   width: 80%;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .project .fa-heart{
