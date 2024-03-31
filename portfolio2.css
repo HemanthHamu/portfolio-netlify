@@ -10,8 +10,8 @@ body {
     padding-top: 80px;
         }
 ::selection{
-    color: #000;
-    background: yellow;
+    color: #fff;
+    background: blueviolet;
 }
  /* header starting */
 header {
