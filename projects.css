@@ -46,11 +46,11 @@ body {
    position: absolute;
    top: 0px;
    right: -110px;
-   background-color: #1D79FF;
+   background:linear-gradient(180deg,rgb(192, 242, 253),#3498db) ;
    padding: 10px;
    text-decoration: none;
    text-align: center;
-   color: #fff;
+   color: #000;
    font-size: 25px;
    transition: 0.5s;
    transform: rotate(45deg);
@@ -59,8 +59,9 @@ body {
    border-radius: 10px;
  }
  .project a:hover{
-   background-color: #074c8d;
+   background:linear-gradient(180deg,rgb(192, 242, 253),#0f3c5b) ;
    transform: rotate(90deg);
+   color: #fff;
  }
 .project a:active{
    background-color: #fff;
@@ -71,12 +72,16 @@ body {
    font-weight: bolder;
    padding: 10px;
    border-radius: 10px;
-   background-color: #3498db;
-   color: #fff;
+   background:linear-gradient(180deg,rgb(192, 242, 253),#3498db) ;
+   color: #000;
    border: none;
    cursor: pointer;
    width: 80%;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.project .share-button:hover{
+   background:linear-gradient(180deg,rgb(145, 194, 205),#2a7eb5) ;
+   color: #fff;
 }
 .project .fa-heart{
    font-size: 30px;

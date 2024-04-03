@@ -1,7 +1,7 @@
 let shareButton = document.querySelectorAll('.share-button');
     shareButton.forEach(button => {
       const hoverTimeline = gsap.timeline({ paused: true });
-      hoverTimeline.to(button, { background: "linear-gradient(180deg, #242323 100%, black 100% )", duration: 1 });
+      hoverTimeline.to(button, { background: "linear-gradient(180deg, #2a7eb5 100%, rgb(192, 242, 253) 100% )", duration: 1 });
       button.addEventListener('mouseenter', () => {
           hoverTimeline.play();
       });
