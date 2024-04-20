@@ -301,7 +301,7 @@ hr{
   .skills .image {
     padding: 10px;
   }
-  .skills .image:nth-child(1) .skill-image {
+.skills .image:nth-child(1) .skill-image {
     box-shadow: 0 0 3px  #FF651E;
 }
 
@@ -418,19 +418,34 @@ textarea:valid{
     background-color: transparent;
     padding: 15px;
 }
-.social-media .social-media-links{
-    text-decoration: none;
-    color: #fff;
-}
 .social-media i {
     font-size: 30px;
     background-color: #000000;
     padding: 20px;
     border-radius: 50%;
-    box-shadow: 0 0 5px grey;
 }
-.social-media i:hover{
-   box-shadow: 0 0 1px grey;
+.social-media .social-media-links:nth-child(1) i{
+    color: #fff;
+    background: linear-gradient(to right,#f09539,#ab5d0f);
+    box-shadow: 0 0 30px #f09539;
+}
+.social-media .social-media-links:nth-child(2) i{
+    color: #fff;
+    background:linear-gradient(to right,#07396b,#0A66C2);
+    box-shadow: 0 0 50px #07396b;
+}
+.social-media .social-media-links:nth-child(3) i{
+    color: #fff;
+    background: linear-gradient(to right,blueviolet,deeppink);
+    box-shadow: 0 0 50px blueviolet;
+}
+.social-media .social-media-links:nth-child(4) i{
+    color: #fff;
+    background: linear-gradient(to right,#C03828,red);
+    box-shadow: 0 0 50px red;
+}
+.social-media .social-media-links i:hover{
+    box-shadow: none;
 }
 footer {
     background-color: #0e0d0d;
