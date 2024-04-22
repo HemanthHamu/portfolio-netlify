@@ -91,7 +91,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(to right,blueviolet,deeppink);
+    background: linear-gradient(180deg,#868be8,blueviolet);
 	border-radius: 5px;
 }
 
