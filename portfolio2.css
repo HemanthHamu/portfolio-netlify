@@ -4,11 +4,13 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* background: linear-gradient(450deg,#0E1226,#251B4F); */
     background-color: #000000;
     color: #fff;
     padding-top: 80px;
-        }
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+}
 ::selection{
     color: #fff;
     background: blueviolet;
