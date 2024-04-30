@@ -2,10 +2,12 @@ const cvButton = document.querySelector('.cv');
 const cvContainer = document.getElementById('cv-container');
 const cvContainerMain = document.querySelector('.cv-container-main');
 const year = document.getElementById('year');
+// FUNCTION TO DISPLAY SIDEBAR
 function toggleMobileLinks() {
     var mobileLinks = document.querySelector('.mobile-links');
     mobileLinks.style.display = (mobileLinks.style.display === 'flex') ? 'none' : 'flex';
 }
+//ADDED EVENT LISTENERS FOR ALL ANCHOR TAGS FOR MOBILES
 var navbarLinks = document.querySelectorAll('.mobile-links a');
 navbarLinks.forEach(function(link) {
     link.addEventListener('click', function() {
@@ -14,6 +16,7 @@ navbarLinks.forEach(function(link) {
     });
 
 });
+// ADDED EVENTLISTENER FOR CVBUTTON
 cvButton.addEventListener('click',()=>{
     if(cvContainerMain.style.display==="none"  || cvContainerMain.style.display === ""){
         cvContainerMain.style.display = "block";
@@ -22,6 +25,7 @@ cvButton.addEventListener('click',()=>{
         cvContainerMain.style.display = "none";
     }
 })
+// FUNCTION FOR HIDING THE CV
 function hideCV(){
     if(cvContainerMain.style.display==="block"){
         cvContainerMain.style.display = "none"
@@ -30,6 +34,7 @@ function hideCV(){
         cvContainerMain.style.display = "block"
     }
 }
+// DISPLAY DATE
 const d = new Date()
 year.innerHTML = d.getFullYear();
 
@@ -45,7 +50,7 @@ gsap.from('.contact-form',{scrollTrigger:".contact-form",x:-500,duration:1,delay
 gsap.from('.social-media',{scrollTrigger:".social-media",x:500,duration:1,delay:0,ease:"bounce"})
 
 
-// Defining the hover animation
+// ANIMATION FOR CV BUTTON AFTER HOVERS ON IT
 const hoverTimeline = gsap.timeline({ paused: true });
 hoverTimeline.to(cvButton, { background: "linear-gradient(to right, #3498db 100%, black 100%)", duration: 0.5 });
 
@@ -58,11 +63,7 @@ cvButton.addEventListener('mouseleave', () => {
   hoverTimeline.reverse();
 });
 
-
-
-
-
-
+//FUNCTION FOR PLAYING THE AUDIO EFFECT
 function playClickSound() {
     var clickSound = document.getElementById("clickSound");
     clickSound.volume = 0.5;
@@ -74,7 +75,7 @@ var anchorTags = document.querySelectorAll("a");
 anchorTags.forEach(function(anchor) {
     anchor.addEventListener("click", playClickSound);
 });
-
+// Add event listeners to all button tags
 var buttonTags = document.querySelectorAll("button");
 buttonTags.forEach(function(btn) {
     btn.addEventListener("click", playClickSound);
