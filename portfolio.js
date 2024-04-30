@@ -61,3 +61,21 @@ cvButton.addEventListener('mouseleave', () => {
 
 
 
+
+
+function playClickSound() {
+    var clickSound = document.getElementById("clickSound");
+    clickSound.volume = 0.5;
+    clickSound.play();
+}
+
+// Add event listeners to all anchor tags
+var anchorTags = document.querySelectorAll("a");
+anchorTags.forEach(function(anchor) {
+    anchor.addEventListener("click", playClickSound);
+});
+
+var buttonTags = document.querySelectorAll("button");
+buttonTags.forEach(function(btn) {
+    btn.addEventListener("click", playClickSound);
+});
