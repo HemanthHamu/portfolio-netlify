@@ -71,7 +71,7 @@ body {
    font-size: 25px;
    font-weight: bolder;
    padding: 10px;
-   border-radius: 10px;
+   border-radius: 0px 20px 0px 10px;
    background:linear-gradient(180deg,rgb(192, 242, 253),#3498db) ;
    color: #000;
    border: none;

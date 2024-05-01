@@ -64,7 +64,7 @@ hr{
 .navbar .cv{
     background: linear-gradient(180deg,#868be8,blueviolet);
     padding: 10px;
-    border-radius: 8px;
+    border-radius: 2px 20px 2px 2px;
     color: #fff;
     font-weight: bolder;
     border: none;
