@@ -23,6 +23,7 @@ header {
     position: fixed;
     top: 0px; 
     z-index: 1;
+    box-shadow: 0 0 5px grey;
        }
 hr{
     border: 1px solid white;
@@ -374,7 +375,7 @@ hr{
     margin-left: 50px;
     margin-bottom: 50px;
     background: transparent;
-    font-size: 25px;
+    font-size: 18px;
     color: #fff;
     transition: 0.5s;
     opacity: 0.5;
