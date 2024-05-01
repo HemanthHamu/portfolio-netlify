@@ -61,6 +61,10 @@ hr{
     background-color: #fff;
     color: #000;
 }
+.navbar span{
+    color: grey;
+    font-size: 23px;
+}
 .navbar .cv{
     background: linear-gradient(180deg,#868be8,blueviolet);
     padding: 10px;

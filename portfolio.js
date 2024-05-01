@@ -41,6 +41,7 @@ year.innerHTML = d.getFullYear();
 //gsap animation starts
 gsap.from('.navbar', { opacity: 0,y:-50,duration: 2, delay: 0.8, ease: 'bounce' });
 gsap.from('.navbar .navbar-links', { opacity: 0,duration: 0.5, delay: 0.8,stagger: 0.4,scale:0.7 });
+gsap.from('.navbar span', { opacity: 0,x:-100,duration: 5, delay: 2 });
 gsap.from('.mobile-links a', { opacity: 0,duration: 3, delay: 0.8,stagger: 0.5,scale:0.7 });
 gsap.from('.image-container',{opacity:0,duration:2,delay:1.5,y:500,ease:'bounce'})
 gsap.registerPlugin(ScrollTrigger);
