@@ -39,7 +39,7 @@ hr{
 }
 .navbar a{
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 21px;
     color: grey;
     padding: 10px;
     transition: 0.2s;
@@ -332,6 +332,9 @@ hr{
 }
 .skills .image:nth-child(8) .skill-image {
     box-shadow: 0 0 3px #F04E2A;
+}
+.skills .image:nth-child(9) .skill-image {
+    box-shadow: 0 0 3px green;
 }
 
 
