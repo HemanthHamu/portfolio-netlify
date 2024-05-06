@@ -88,6 +88,7 @@ body {
    background-color: transparent;
    padding: 10px;
    color: white;
+   cursor: pointer;
 }
 .fa-heart.liked{
    color: red;

@@ -54,5 +54,14 @@ let shareButton = document.querySelectorAll('.share-button');
 // Call the checkLikedAndCount function for each heart button
 heartButtons.forEach(checkLikedAndCount);
 
+function playAudio(){
+    const thankYou = document.getElementById('thank-you');
+    thankYou.volume = 0.5
+    thankYou.play()
+}
+heartButtons.forEach((heart) => {
+    heart.addEventListener('click',playAudio)
+})
+
   
   
