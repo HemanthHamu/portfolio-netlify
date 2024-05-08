@@ -167,7 +167,6 @@ hr{
     margin: auto;
     margin-top: -150px;
     border: none;
-    border: 1px solid #fff;
 }
 .my-image .image-adjustment{
     background: url('/images/myimage.jpg');
@@ -181,8 +180,6 @@ hr{
 .container .about-me{
     padding: 15px;
     width: 550px;
-    /* background:linear-gradient(10deg,#0E1226,#251B4F); */
-    /* box-shadow: 0 0 5px #a28fee; */
     background-color: #000000;
     box-shadow: 0 0 5px #3a3838;
     border-radius: 10px;
@@ -191,7 +188,6 @@ hr{
     margin-left: 30px;
     transition: 0.5s;
     font-size: 18px;
-    /* color: #d3caf5; */
     color: grey;
     font-size: 21px;
 }
@@ -257,7 +253,6 @@ hr{
     list-style-type: square;
 }
 .project1-details span{
-    /* color: #6cbbef; */
     color: #fff;
     font-size: 25px;
     padding: 10px;
@@ -427,6 +422,8 @@ textarea:valid{
     justify-content: space-around;
     background-color: transparent;
     padding: 15px;
+    max-width: 100%;
+    width: 100%;
 }
 .social-media i {
     font-size: 30px;

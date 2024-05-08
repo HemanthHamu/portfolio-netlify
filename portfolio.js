@@ -1,6 +1,7 @@
 const cvButton = document.querySelector('.cv');
 const cvContainer = document.getElementById('cv-container');
 const cvContainerMain = document.querySelector('.cv-container-main');
+const socialMedia = document.querySelector('.media');
 const year = document.getElementById('year');
 const myName = document.querySelector('.name');
 const nameText = myName.textContent;
@@ -13,8 +14,9 @@ myName.innerHTML = initial;
 gsap.from('.single-char',{
     opacity:0,
     x:-100,
-    stagger:1,
-    delay:2
+    stagger:0.4,
+    delay:2,
+    duration:0.3
 })
 
 // FUNCTION TO DISPLAY SIDEBAR
@@ -55,15 +57,16 @@ year.innerHTML = d.getFullYear();
 
 //gsap animation starts
 gsap.from('.navbar', { opacity: 0,y:-50,duration: 2, delay: 0.8, ease: 'bounce' });
-gsap.from('.navbar .navbar-links', { opacity: 0,duration: 0.5, delay: 0.8,stagger: -1,scale:0,rotate:720,y:-100 });
-gsap.from('.navbar span', { opacity: 0,x:-100,duration: 5, delay: 2,rotate:360,stagger:-0.5 });
+gsap.from('.navbar .navbar-links', { opacity: 0,duration: 0.5, delay: 0.8,stagger: 1,scale:0,rotate:720,y:-100 });
+gsap.from('.navbar span', { opacity: 0,x:-100,duration: 5, delay: 1,rotate:360,stagger:0.5 });
+gsap.from('.cv',{duration:1,y:100,rotate:720})
 gsap.from('.mobile-links a', { opacity: 0,duration: 3, delay: 0.8,stagger: 0.5,scale:0.7 });
 gsap.from('.image-container',{opacity:0,duration:2,delay:1.5,y:500,ease:'bounce'});
 gsap.registerPlugin(ScrollTrigger);
 gsap.from('.project1-container', {scrollTrigger:".project1-container",x:-500,duration:1,delay:0});
 gsap.from('.skills', {scrollTrigger:".skills",x:500,duration:3,rotate:360});
-gsap.from('.contact-form',{scrollTrigger:".contact-form",x:-500,duration:3,rotate:720,delay:0,ease:"bounce"})
-gsap.from('.social-media',{scrollTrigger:".social-media",x:500,duration:1,delay:0,ease:"bounce"})
+gsap.from('.contact-form',{scrollTrigger:".contact-form",x:-500,duration:2,rotate:720,delay:0,ease:"bounce"})
+// gsap.from('.social-media',{scrollTrigger:".social-media",x:500,duration:1,delay:0,ease:"bounce"});
 
 
 // ANIMATION FOR CV BUTTON AFTER HOVERS ON IT
