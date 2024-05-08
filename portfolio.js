@@ -40,14 +40,14 @@ year.innerHTML = d.getFullYear();
 
 //gsap animation starts
 gsap.from('.navbar', { opacity: 0,y:-50,duration: 2, delay: 0.8, ease: 'bounce' });
-gsap.from('.navbar .navbar-links', { opacity: 0,duration: 0.5, delay: 0.8,stagger: 0.4,scale:0.7 });
-gsap.from('.navbar span', { opacity: 0,x:-100,duration: 5, delay: 2 });
+gsap.from('.navbar .navbar-links', { opacity: 0,duration: 0.5, delay: 0.8,stagger: 0.4,scale:0.7,rotate:720,y:-100 });
+gsap.from('.navbar span', { opacity: 0,x:-100,duration: 5, delay: 2,rotate:360,stagger:0.5 });
 gsap.from('.mobile-links a', { opacity: 0,duration: 3, delay: 0.8,stagger: 0.5,scale:0.7 });
 gsap.from('.image-container',{opacity:0,duration:2,delay:1.5,y:500,ease:'bounce'})
 gsap.registerPlugin(ScrollTrigger);
 gsap.from('.project1-container', {scrollTrigger:".project1-container",x:-500,duration:1,delay:0});
-gsap.from('.skills', {scrollTrigger:".skills",x:500,duration:1,delay:0});
-gsap.from('.contact-form',{scrollTrigger:".contact-form",x:-500,duration:1,delay:0,ease:"bounce"})
+gsap.from('.skills', {scrollTrigger:".skills",x:500,duration:3,rotate:360});
+gsap.from('.contact-form',{scrollTrigger:".contact-form",x:-500,duration:3,rotate:720,delay:0,ease:"bounce"})
 gsap.from('.social-media',{scrollTrigger:".social-media",x:500,duration:1,delay:0,ease:"bounce"})
 
 
