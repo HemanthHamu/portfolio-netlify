@@ -67,7 +67,7 @@ hr{
     font-size: 23px;
 }
 .navbar .cv{
-    background: linear-gradient(180deg,#868be8,blueviolet);
+    background: linear-gradient(180deg,lightseagreen,seagreen);
     padding: 10px;
     border-radius: 2px 20px 2px 2px;
     color: #fff;
@@ -721,7 +721,7 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg,#868be8,blueviolet);
+    background: linear-gradient(180deg,lightseagreen,blueviolet);
 	border-radius: 5px;
 }
 
