@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #000000;
+    background-color: #001524;
     color: #fff;
     padding-top: 80px;
     overflow-x: hidden;
@@ -17,7 +18,7 @@ body {
 }
  /* header starting */
 header {
-    background-color: #000000;
+    background-color: #001524;
     text-align: center;
     width: 100%;
     position: fixed;
@@ -51,7 +52,7 @@ hr{
 .navbar a:hover{
     transition: 0.1s;
     border: none;
-    background: linear-gradient(180deg,#868be8,blueviolet);
+    background: linear-gradient(180deg,#3b6c8c,#3b6c8c);
     color: #fff;
     transition: 0.5s;
 }
@@ -130,8 +131,7 @@ hr{
 .image-container{
     padding: 3rem;
     position: static;
-    background-color: #000000;
-    background: linear-gradient(to left,#000000,#111111);
+    background-color: #001524;
     box-shadow: 0 0 5px #3a3838;
     max-width: 100%;
     width: 70%;
@@ -180,7 +180,7 @@ hr{
 .container .about-me{
     padding: 15px;
     width: 550px;
-    background-color: #000000;
+    background-color: #001524;
     box-shadow: 0 0 5px #3a3838;
     border-radius: 10px;
     margin-top: 50px;
@@ -215,11 +215,12 @@ hr{
     justify-content: space-around;
     max-width: 100%;
     width: 100%;
+    /* transform: translateX(-100%); */
 }
 .project1-container video{
-    border-radius: 10px;
+    border-radius: 5px 30px 10px 5px;
     border: 1px solid #3a3838;
-    box-shadow: 0 0 5px #3a3838;
+    box-shadow: 0 0 3px #3b6c8c;
     width: 45%;
     cursor: pointer;
     transition: 0.5s;
@@ -237,9 +238,9 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    background-color: #000000;
-    border: 1px solid #fff;
-    border-radius: 10px;
+    background-color: #001524;
+    border: 1px solid #3b6c8c;
+    border-radius: 30px 5px 5px 10px;
     width: 45%;
     transition: 0.5s;
     color: grey;
@@ -360,7 +361,7 @@ hr{
     max-width: 100%;
     width: 50%;
     padding: 30px;
-    background-color: #000000;
+    background-color: #001524;
     border-radius: 8px;
     box-shadow: 0 0 2px grey;
     margin: 50px auto;
@@ -400,8 +401,7 @@ textarea:valid{
 }
 .submit-btn{
    width: 80%;
-   /* background-color: #543bba; */
-   background-color: rgb(37, 36, 36);
+   background-color: #1e4158;
    color: #fff;
    border: none;
    padding: 10px 20px;
@@ -411,8 +411,7 @@ textarea:valid{
    margin-left: 50px;
 }
 .submit-btn:hover {
-   /* background-color: #3c22a3; */
-   background-color: rgb(24, 24, 24);
+   background-color: #142f42;
 }
 .top{
     display: none;
@@ -455,7 +454,7 @@ textarea:valid{
     box-shadow: none;
 }
 footer {
-    background-color: #0e0d0d;
+    background-color: #001524;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -471,7 +470,7 @@ footer {
     }
     header{
         position: absolute;
-        background-color: #131313;
+        background-color: #001524;
         padding: 20px;
     }
     .menu-icon {
@@ -506,7 +505,7 @@ footer {
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        background-color: #131313;
+        background-color: #001524;
         font-weight: bolder;
         position: absolute;
         top: 120px;

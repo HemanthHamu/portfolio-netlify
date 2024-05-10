@@ -99,3 +99,17 @@ var buttonTags = document.querySelectorAll("button");
 buttonTags.forEach(function(btn) {
     btn.addEventListener("click", playClickSound);
 });
+
+
+// window.addEventListener('wheel',function(vals){
+//     if(vals.deltaY>0){
+//         gsap.to('.project1-container',{
+//             transform:'translateX(0%)',
+//             duration:2,
+//             ease:'bounce'
+//         })
+//     }
+// })
+gsap.to('.project1-container',{
+    transform:'translateX(-100%)'
+})
