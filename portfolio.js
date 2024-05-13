@@ -3,6 +3,7 @@ const cvContainer = document.getElementById('cv-container');
 const cvContainerMain = document.querySelector('.cv-container-main');
 const socialMedia = document.querySelector('.media');
 const year = document.getElementById('year');
+//ANIMATION FOR NAME: HEMANTH
 const myName = document.querySelector('.name');
 const nameText = myName.textContent;
 const splitText = nameText.split("");
@@ -19,7 +20,7 @@ gsap.from('.single-char',{
     duration:0.3
 })
 
-// FUNCTION TO DISPLAY SIDEBAR
+// FUNCTION TO DISPLAY SIDEBAR FOR MOBILE SCREENS
 function toggleMobileLinks() {
     var mobileLinks = document.querySelector('.mobile-links');
     mobileLinks.style.display = (mobileLinks.style.display === 'flex') ? 'none' : 'flex';
@@ -63,11 +64,9 @@ gsap.from('.cv',{duration:1,y:100,rotate:720})
 gsap.from('.mobile-links a', { opacity: 0,duration: 3, delay: 0.8,stagger: 0.5,scale:0.7 });
 gsap.from('.image-container',{opacity:0,duration:2,delay:1.5,y:500,ease:'bounce'});
 gsap.registerPlugin(ScrollTrigger);
-gsap.from('.project1-container', {scrollTrigger:".project1-container",x:-500,duration:3});
-gsap.from('.skills', {scrollTrigger:".skills",x:500,duration:3});
-gsap.from('.contact-form',{scrollTrigger:".contact-form",x:-500,duration:2,rotate:720,delay:0,ease:"bounce"})
-// gsap.from('.social-media',{scrollTrigger:".social-media",x:500,duration:1,delay:0,ease:"bounce"});
-
+gsap.from('.project1-container', {scrollTrigger:".project1-container",y:300,duration:1});
+gsap.from('.skills', {scrollTrigger:".skills",y:300,duration:1});
+gsap.from('.contact-form',{scrollTrigger:".contact-form",y:100,duration:2,rotate:720,delay:0,ease:"bounce"});
 
 // ANIMATION FOR CV BUTTON AFTER HOVERS ON IT
 const hoverTimeline = gsap.timeline({ paused: true });
@@ -110,6 +109,3 @@ buttonTags.forEach(function(btn) {
 //         })
 //     }
 // })
-gsap.to('.project1-container',{
-    transform:'translateX(-100%)'
-})
