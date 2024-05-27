@@ -100,13 +100,18 @@ buttonTags.forEach(function(btn) {
     btn.addEventListener("click", playClickSound);
 });
 
+//Function to check whether user internet connection is enabled or not
 
-// window.addEventListener('wheel',function(vals){
-//     if(vals.deltaY>0){
-//         gsap.to('.project1-container',{
-//             transform:'translateX(0%)',
-//             duration:2,
-//             ease:'bounce'
-//         })
-//     }
-// })
+function updateOnlineStatus(){
+    const internetConnection = document.getElementById('no-internet-connection');
+    if(navigator.onLine){
+        internetConnection.style.display = 'none'
+    }
+    else{
+        internetConnection.style.display = 'block';
+    }
+}
+window.addEventListener('online',updateOnlineStatus)
+window.addEventListener('offline',updateOnlineStatus)
+
+updateOnlineStatus()
