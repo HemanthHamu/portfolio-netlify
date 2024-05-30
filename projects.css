@@ -4,6 +4,7 @@ body {
       sans-serif;
     color: #fff;
   }
+
  .projects{
     display: flex;
     flex-direction: column;

@@ -114,4 +114,27 @@ function updateOnlineStatus(){
 window.addEventListener('online',updateOnlineStatus)
 window.addEventListener('offline',updateOnlineStatus)
 
-updateOnlineStatus()
+updateOnlineStatus();
+
+
+
+
+
+
+
+// scripts.js
+function showLoadingBar() {
+    const loadingBar = document.querySelector('.loading-line');
+    loadingBar.style.transform = 'scaleX(1)';
+}
+
+function hideLoadingBar() {
+    const loadingBar = document.querySelector('.loading-line');
+    loadingBar.style.transform = 'scaleX(0)';
+}
+
+const links = document.querySelectorAll('a');
+links.forEach(link => {
+    link.addEventListener('click', showLoadingBar)
+});
+
