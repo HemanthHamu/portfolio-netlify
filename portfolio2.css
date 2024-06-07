@@ -402,24 +402,24 @@ hr{
     max-width: 100%;
     width: 50%;
     padding: 30px;
-    background-color: #001524;
     background-color: #232323;
+    background: rgb(21, 21, 21);
     border-radius: 8px;
     box-shadow: 0 0 2px grey;
     margin: 50px auto;
 }
 .contact-form .hr-input {
-    border: none;
+    border: 1px solid grey;
     width: 60%;
     outline: none;
-    padding: 5px;
+    padding: 10px;
     margin-left: 50px;
     margin-bottom: 50px;
-    background: transparent;
+    background: #242424;
     font-size: 18px;
     color: #fff;
     transition: 0.5s;
-    opacity: 0.5;
+    border-radius: 8px;
 }
 .contact-form .hr-input:focus{
     width: 80%;
@@ -428,24 +428,20 @@ hr{
 }
 
 .hr-input:valid{
-    border-bottom: 1px solid green;
-}
-.hr-input:invalid{
-    border-bottom: 1px solid red;
+    border: 1px solid green;
 }
 textarea:valid{
-    border-bottom: 2px solid green;
+    border: 2px solid green;
 }
 ::placeholder{
     color: #fff;
+    color: #beff6c;
     opacity: 0.4;
     font-weight: bolder;
 }
 .submit-btn{
    width: 80%;
-   background-color: #1e4158;
-   background-color: #181818;
-   color: #fff;
+   background: linear-gradient(180deg,lightseagreen,seagreen);
    color: #fbf8f3;
    font-weight: bolder;
    border: none;
@@ -455,10 +451,10 @@ textarea:valid{
    font-size: 20px;
    margin-left: 50px;
    transition: 0.5s;
+   letter-spacing: 1px;
 }
 .submit-btn:hover {
-   background-color: #142f42;
-   background-color:#121212 ;
+    background: linear-gradient(180deg,rgb(23, 125, 120),seagreen);
 }
 .submit-btn:active{
     transform: scale(0.5);
@@ -740,14 +736,18 @@ footer {
      }
      .contact-form .hr-input{
         margin-left: 5px;
-        padding: 5px;
+        padding: 10px;
         font-size: 20px;
         width: 80%;
-        opacity: 0.5;
+        opacity: 0.7;
      }
      .contact-form .hr-input:focus{
         width: 100%;
         opacity: 1;
+     }
+     ::placeholder{
+        color: #fff;
+        opacity: 0.8;
      }
      .submit-btn{
         margin-left: 5px;
