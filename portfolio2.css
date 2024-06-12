@@ -301,6 +301,12 @@ hr{
     letter-spacing: 2px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+.project1-details .disclaimer{
+    background-color: black;
+    color: #beff6c;
+    padding: 8px;
+    border-radius: 10px;
+}
 
 .project1-details p{
     font-size: 20px;
