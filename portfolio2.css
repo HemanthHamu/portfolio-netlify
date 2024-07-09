@@ -1,12 +1,10 @@
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Roboto",sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #001524;
-    background-color: #232323;
-    background-color: #1C1C1C;
+    background-color: #171616;
     color: #fff;
     padding-top: 80px;
     overflow-x: hidden;
@@ -70,7 +68,7 @@ hr{
     color: grey;
     color: #fbf8f3;
     padding: 10px;
-    transition: 0.2s;
+    /* transition: 0.2s; */
     border-radius: 10px;
 }
 .navbar a:active{
@@ -157,9 +155,8 @@ hr{
 .image-container{
     padding: 3rem;
     position: static;
-    background-color: #1C1C1C;
-    /* box-shadow: 0 0 5px #3a3838; */
-    border: 1px solid #fbf8f3;
+    background-color: #171616;
+    box-shadow: 0 0 2px grey;
     max-width: 100%;
     width: 70%;
     margin: 150px auto;
@@ -208,8 +205,7 @@ hr{
 .container .about-me{
     padding: 15px;
     width: 550px;
-    box-shadow: 0 0 5px #3a3838;
-    box-shadow: 0 0 3px #fbf8f3;
+    box-shadow: 0 0 2px grey;
     border-radius: 10px;
     margin-top: 50px;
     margin-bottom: 80px;
@@ -248,10 +244,7 @@ hr{
 }
 .project1-container video{
     border-radius: 5px 30px 10px 5px;
-    border: 1px solid #3a3838;
-    border: none;
-    box-shadow: 0 0 3px #3b6c8c;
-    box-shadow: 0 0 3px #fbf8f3;
+    box-shadow: 0 0 2px grey;
     width: 45%;
     cursor: pointer;
     transition: 0.5s;
@@ -260,6 +253,7 @@ hr{
 .project1-container video:hover{
     transform: scale(1.03);
     transition: 0.5s;
+    box-shadow: 0 0 3px #FAFAFA;
 }
 .project1-container video:focus{
     box-shadow: none;
@@ -269,13 +263,12 @@ hr{
     display: flex;
     flex-direction: column;
     justify-content: start;
-    border: 1px solid #3b6c8c;
-    border: 1px solid #fbf8f3;
     border-radius: 30px 5px 5px 10px;
     width: 45%;
     transition: 0.5s;
-    color: #fbf8f3;
-    background-color: #232323;
+    color: #FAFAFA;
+    background-color: #171616;
+    box-shadow: 0 0 2px grey;
 }
 .project1-container .project1-details:hover{
     border: none;
@@ -399,29 +392,30 @@ hr{
     max-width: 100%;
     width: 50%;
     padding: 30px;
-    background-color: #232323;
-    background: rgb(21, 21, 21);
+    background-color: #171616;
     border-radius: 8px;
     box-shadow: 0 0 2px grey;
     margin: 50px auto;
 }
 .contact-form .hr-input {
-    border: 1px solid grey;
+    border: none;
     width: 60%;
     outline: none;
     padding: 10px;
     margin-left: 50px;
     margin-bottom: 50px;
-    background: #242424;
     font-size: 18px;
     color: #fff;
     transition: 0.5s;
     border-radius: 8px;
+    background-color: #171616;
+    box-shadow: 0 0 2px grey;
 }
 .contact-form .hr-input:focus{
     width: 80%;
     transition: 0.5s;
     opacity: 1;
+    border: 1px solid #185abc;
 }
 
 .hr-input:valid{
@@ -496,8 +490,7 @@ textarea:valid{
     box-shadow: none;
 }
 footer {
-    background-color: #001524;
-    background-color: #3b3a3a;
+    background-color: #171616;
     color: #fff;
     color: #fbf8f3;
     text-align: center;
@@ -510,12 +503,11 @@ footer {
     body{
         margin: 0;
         left: 0;
-        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-family: 'Roboto',sans-serif;
     }
     header{
         position: absolute;
-        background-color: #001524;
-        background-color: #232323;
+        background-color: #171616;
         padding: 20px;
     }
     .menu-icon {
@@ -553,7 +545,6 @@ footer {
         flex-direction: column;
         gap: 10px;
         align-items: center;
-        background-color: #001524;
         background-color: #232323;
         font-weight: bolder;
         position: absolute;
