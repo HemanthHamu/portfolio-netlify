@@ -1,4 +1,5 @@
 
+
 body {
     font-family: "Roboto",sans-serif;
     margin: 0;
@@ -465,39 +466,15 @@ textarea:valid{
     background-color: #000000;
     padding: 20px;
     border-radius: 50%;
-}
-.social-media .social-media-links:nth-child(1) i{
     color: #fff;
     background: linear-gradient(to right,#2B3137,#24292E);
-    box-shadow: 0 0 30px #302e2e;
-}
-
-.social-media .social-media-links:nth-child(2) i{
-    color: #fff;
-    background: linear-gradient(to right,#f09539,#ab5d0f);
-    box-shadow: 0 0 30px #f09539;
-}
-.social-media .social-media-links:nth-child(3) i{
-    color: #fff;
-    background:linear-gradient(to right,#07396b,#0A66C2);
-    box-shadow: 0 0 50px #07396b;
-}
-.social-media .social-media-links:nth-child(4) i{
-    color: #fff;
-    background: linear-gradient(to right,blueviolet,deeppink);
-    box-shadow: 0 0 50px blueviolet;
-}
-.social-media .social-media-links:nth-child(5) i{
-    color: #fff;
-    background: linear-gradient(to right,#C03828,red);
-    box-shadow: 0 0 50px red;
+    box-shadow: 0 0 5px #fff;
 }
 .social-media .social-media-links i:hover{
     box-shadow: none;
 }
 footer {
     background-color: #171616;
-    color: #fff;
     color: #fbf8f3;
     text-align: center;
     padding: 1em 0;
