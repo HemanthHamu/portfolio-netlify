@@ -14,39 +14,140 @@
     ></script>
   </head>
   <body>
-    <audio id="thank-you" src="audios/thank-you-99932.mp3" preload="auto"></audio>
     <h2>Projects</h2>
     <hr />
-    <div class="projects">
-      <div class="project">
-        <img src="images/foodfusion.png" alt="food-website" loading="lazy" />
-        <a href="https://foodfusion586.vercel.app">View Project 👁️</a>
-        <button class="share-button" id="share-button">Share Project</button>
-       <i class="fa-solid fa-heart"></i>
-        <span class="like-count" id="like-count">0</span>
+    
+<div class="project1-container">
+  <video  title="WeText" src="videos/WeText.mp4" controls ></video>
+  <div class="project1-details">
+      <p>Project Name : <span class="project-title">WeText</span></p>
+      <p>Technologies Used : React,Express,MongoDB</p>
+      <p>Project Description : </p><br>
+      <ul> 
+          <li>
+              Implemented a user friendly interface using react.
+          </li> <br>
+          <li>
+              Server is created using express framework.
+          </li>  <br>
+          <li>
+              Integrated mongodb database to store user details.
+          </li> <br>
+          <li>
+              Integrated an avatar api which will generate a random avatar based on gender selection from registration page. 
+              If user selects male a male random avatar will be generated.
+               if female then a female random avatar will be generated. 
+          </li> <br>
+          <li>
+              after user registers or login a cookie will be generated and it will not be expired for 15 days until user clicks on logout button. 
+              If user closes the browser without clicking on logout button cookie will not be expired.
+               so if user again visits the WeText website they can easily login without entering their credentials.
+          </li>
+          <li class="disclaimer">
+             * Working on socket io to enable real time communication. *
+          </li>
+      </ul>
+  </div>
+</div>
+<div class="project1-container">
+  <video loading="lazy" poster="images/Blog Website.png" title="blog website" src="videos/blog-website.mp4"  controls ></video>
+  <div class="project1-details">
+      <p>Project Name : <span class="project-title">BLOG WEBSITE</span></p>
+      <p>Languages Used : HTML,CSS,JavaScript,EJS</p>
+      <p>Modules used : Express,Mongoose,nodemailer,Path</p>
+      <p>Project URL : <a href="https://blog-app-uq47.onrender.com" class="blog">click here</a></p>
+      <p>Project Description : </p><br>
+      <ul> 
+          <li> Developed a user friendly website where user can create an account using email and publish their own blogs.</li><br>
+          <li>User needs to verify their email to create an account using OTP.</li><br>
+          <li> Implemented MongoDB Atlas for secure storage of user details and  Ejs template engine to render dynamic content.</li>
+      </ul>
+  </div>
+</div>
+<div class="project1-container">
+  <video poster="images/Todo-List.png" title="todo-list" src="videos/Todo-List using React.mp4" controls ></video>
+  <div class="project1-details">
+      <p>Project Name : <span class="project-title">TODO-LIST</span></p>
+      <p>Languages Used : HTML,CSS and JavaScript</p>
+      <p>Library Used : React</p>
+      <p>Project URL : <a href="https://todoapp586.vercel.app/">click here</a></p>
+      <p>Project Description : </p><br>
+      <ul>
+          <li> 
+              Developed a user friendly todo website where user can add a todo that they want and after adding a todo user can see the total todos list in the bottom
+          of the screen.
+          </li> <br>
+          <li>
+              By mistake if the user mispells the todo they can simply click on edit button and correct it.
+          </li> <br>
+          <li> 
+              once user have completed the todo they can mark it as completed by clicking on ✅ and after clicking on ✅
+              the todo will be marked as completed and the count of completed todos is also increased which is displayed on the bottom
+              of the screen.
+          </li>
+      </ul>
+  </div>
+</div>
+<div class="project1-container">
+      <video poster="images/Recipe Store.png" title="recipe store" src="videos/recipestore.mp4" controls ></video>
+      <div class="project1-details">
+          <p>Project Name : <span class="project-title">RECIPE STORE</span></p>
+          <p>Languages Used : HTML,CSS and JavaScript</p>
+          <p>API Used : mealDB</p>
+          <p>Project Description : </p><br>
+          <ul> 
+              <li>
+                  Implemented this website using HTML,CSS and JavaScript
+              </li> <br>
+              <li>
+                  i have used an API called mealDB API for getting
+                  recipes whenever user searched for a specific recipe
+              </li>  <br>
+              <li>
+                  Implemented greensock animations(GSAP) to increase the beauty of website.
+              </li> 
+          </ul>
+          <p>Project link : <a href="https://github.com/HemanthHamu/recipe-project.git">Github</a></p>
       </div>
-      <div class="project">
-        <img src="images/Blog Website2.png" alt="blog" loading="lazy" />
-        <a  href="https://blog-app-uq47.onrender.com">View Project 👁️</a>
-        <button class="share-button" id="share-button">Share Project</button>
-       <i class="fa-solid fa-heart"></i>
-        <span class="like-count" id="like-count">0</span>
+</div>
+<div class="project1-container">
+      <video poster="images/Shoe Store.png" title="shoe store"  src="videos/shoestore.mp4"  controls  muted ></video>
+      <div class="project1-details">
+          <p>Project Name : <span class="project-title">SHOE STORE</span></p>
+          <p>Languages Used : HTML,CSS,Python,Django</p>
+          <p>Database used : mySQL</p>
+          <p>Project Description : </p><br>          
+              <ul>
+                  <li>Implemented this website using HTML,CSS for front end </li>
+                  <li> Python and Django is used for back end </li>
+                  <li>Integrated mySQL to login and register form for secure storage of user details</li>
+              </ul>                       
+          <p>Project link : <a href="https://github.com/HemanthHamu/projects.git">Github</a></p>
       </div>
-      <div class="project">
-        <img src="images/weather website.png" alt="weather" loading="lazy" />
-        <a href="https://weatherapp586.vercel.app/">View Project 👁️</a>
-        <button class="share-button" id="share-button">Share Project</button>
-       <i class="fa-solid fa-heart"></i>
-        <span class="like-count" id="like-count">0</span>
-      </div>
-      <div class="project">
-        <img src="images/todo list.png" alt="todo" loading="lazy" />
-        <a href="https://todoapp586.vercel.app/">View Project 👁️</a>
-        <button class="share-button" id="share-button">Share Project</button>
-       <i class="fa-solid fa-heart"></i>
-        <span class="like-count" id="like-count">0</span>
-      </div>
-    </div>
+</div>
+    
     <script src="projects.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

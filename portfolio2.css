@@ -1,5 +1,3 @@
-
-
 body {
     font-family: "Roboto",sans-serif;
     margin: 0;
@@ -164,15 +162,15 @@ hr{
     border-radius: 5px 5px 30px 30px;
 }
 .image-container .name {
-    color: #8774E6;
+    color: #3498db;
     font-weight: bolder;
     letter-spacing: 1px;
     animation: nameAnimation 3s linear infinite;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 @keyframes nameAnimation {
-    0%{color: #8774E6;}
-    25%{color: #0c392b;} 
+    0%{color: #fff;}
+    25%{color: #3498db;} 
 }
 .image-container .name:hover{
     transform: scale(1.1);
@@ -234,81 +232,97 @@ hr{
     font-weight: bolder;
 }
 
-.project1-container{
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 50px;
-    justify-content: space-around;
-    max-width: 100%;
-    width: 100%;
-    /* transform: translateX(-100%); */
-}
-.project1-container video{
-    border-radius: 5px 30px 10px 5px;
-    box-shadow: 0 0 2px grey;
-    width: 45%;
-    cursor: pointer;
-    transition: 0.5s;
-    padding: 10px;
-}
-.project1-container video:hover{
-    transform: scale(1.03);
-    transition: 0.5s;
-    box-shadow: 0 0 3px #FAFAFA;
-}
-.project1-container video:focus{
-    box-shadow: none;
-    border: 2px solid #fff;
-}
-.project1-container .project1-details{
+/* LIST OF PROJECTS STYLES */
+
+.projects{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    border-radius: 30px 5px 5px 10px;
-    width: 45%;
-    transition: 0.5s;
-    color: #FAFAFA;
-    background-color: #171616;
-    box-shadow: 0 0 2px grey;
-}
-.project1-container .project1-details:hover{
-    border: none;
-    box-shadow: 0 0 10px #fff;
-    transition: 0.5s;
-}
-.project1-container .project1-details ul{
-    list-style-type: square;
-}
-.project1-details span{
-    color: #fff;
-    font-size: 25px;
-    padding: 10px;
-    letter-spacing: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.project1-details .disclaimer{
-    background-color: black;
-    color: #beff6c;
-    padding: 8px;
+    gap: 150px;
+    width: 50%;
+    margin: 150px auto;
+ }
+ .project{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    box-shadow: 0 0 1px grey;
     border-radius: 10px;
+    padding: 10px;
+ }
+ .project:hover{
+    border: 1px solid grey;
+ }
+ .project:hover a{
+   transform: scale(1.1);
+   transform: rotate(90deg);
+   right: -90px;
+ }
+ .project img{
+    width: 100%;
+    background-size: cover;
+    height: 300px;
+    transition: 0.5s;
+    border-radius: 8px;
+    box-shadow: 0 0 2px grey;
+ }
+ .project a{
+   position: absolute;
+   top: 0px;
+   right: -110px;
+   background:linear-gradient(180deg,rgb(192, 242, 253),#3498db) ;
+   padding: 10px;
+   text-decoration: none;
+   text-align: center;
+   color: #000;
+   font-size: 25px;
+   transition: 0.5s;
+   transform: rotate(45deg);
+   width: 35%;
+   border: none;
+   border-radius: 10px;
+ }
+ .project a:hover{
+   background:linear-gradient(180deg,rgb(192, 242, 253),#0f3c5b) ;
+   transform: rotate(90deg);
+   color: #fff;
+ }
+.project a:active{
+   background-color: #fff;
+   color: #000;
+}
+.project .share-button{
+   font-size: 25px;
+   font-weight: bolder;
+   padding: 10px;
+   border-radius: 0px 20px 0px 10px;
+   background:linear-gradient(180deg,rgb(192, 242, 253),#3498db) ;
+   color: #000;
+   border: none;
+   cursor: pointer;
+   width: 80%;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.project .share-button:hover{
+   background:linear-gradient(180deg,rgb(145, 194, 205),#2a7eb5) ;
+   color: #fff;
+}
+.project .fa-heart{
+   font-size: 30px;
+   background-color: transparent;
+   padding: 10px;
+   color: white;
+   cursor: pointer;
+}
+.fa-heart.liked{
+   color: red;
+}
+.project .like-count{
+   font-size: 20px;
 }
 
-.project1-details p{
-    font-size: 20px;
-    margin-left: 10px;
-}.project1-details ul{
-    font-size: 18px;
-    word-spacing: 5px;
-}
-.project1-details a{
-    text-decoration: underline;
-    color: #fff;
-    font-size: 23px;
-    letter-spacing: 2px;
-}
-.project1-details a:hover{
-    color: blue;
-}
 
 /* skills starting */
 #skills{
@@ -468,10 +482,10 @@ textarea:valid{
     border-radius: 50%;
     color: #fff;
     background: linear-gradient(to right,#2B3137,#24292E);
-    box-shadow: 0 0 5px #fff;
+    border: 1px solid grey;
 }
 .social-media .social-media-links i:hover{
-    box-shadow: none;
+    border: 2px solid #fff;
 }
 footer {
     background-color: #171616;
@@ -481,7 +495,9 @@ footer {
     width: 100%;
     margin-top: 20px;
 }
- 
+
+/* STYLES FOR DEVICES WHOSE WIDTH IS LESS THAN OR EQUAL TO 768PX  */
+
 @media (max-width:768px) {
     body{
         margin: 0;
@@ -646,46 +662,25 @@ footer {
         25%{color: #0b372a;}
     }
     .container .about-me{
-        max-width: 100%;
         width: 90%;
         margin: 30px auto;
         box-shadow: 0 0 3px grey;
     }
-    .project1-container{
-        max-width: 100%;
+    /* LIST OF PROJECTS STYLES FOR DEVICES WHOSE WIDTH IS LESS THAN OR EQUAL TO 768PX */
+    .projects{
         width: 90%;
-        margin: 30px auto;
-        display: flex;
-        gap: 10px;
-        justify-content: center;
+        margin: 100px auto;
     }
-    .project1-container video{
-        max-width: 100%;
-        width: 100%;
-        height: 400px;
+    .project a{
+      width: 48%;
+      top: -20px;
+      right: -38px;
+      font-size: 20px;
     }
-    .project1-container video:hover{
-        box-shadow: 0 0 5px #fff;
-    }
-    .project1-container .project1-details{
-        max-width: 100%;
-        width: 100%;
-        padding: 10px;
-        border: none;
-        box-shadow: 0 0 1px #fff;
-    }
-     .project1-details p {
-        font-size: 18px;
-        text-align: left;
-     }
-     .project1-details span{
-        font-size: 15px;
-     }
      .skills{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        max-width: 100%;
         width: 93%;
      }
      .skills .image{
@@ -755,3 +750,4 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
 	background: #fff;
 }
+
