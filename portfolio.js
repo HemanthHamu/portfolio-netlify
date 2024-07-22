@@ -70,7 +70,7 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from('.project1-container', {scrollTrigger:".project1-container",y:300,duration:2,stagger:2,opacity:0});
 gsap.from('.skills', {scrollTrigger:".skills",y:300,duration:1});
 gsap.from('.contact-form',{scrollTrigger:".contact-form",y:100,duration:2,rotate:720,delay:0,ease:"bounce"});
-gsap.from('.social-media-links', {scrollTrigger:".social-media-links",duration:2,stagger:1,opacity:0});
+gsap.from('.social-media-links', {scrollTrigger:".social-media-links",duration:2,stagger:0.5,opacity:0});
 
 // ANIMATION FOR CV BUTTON AFTER HOVERS ON IT
 const hoverTimeline = gsap.timeline({ paused: true });
