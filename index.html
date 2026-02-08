@@ -1,170 +1,297 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hemanth Sahukari</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="portfolio2.css">
-    <link rel=" shortcut icon" href="images/logo.png" type="image/x-icon">
-    <script src="https://unpkg.com/gsap@3.10.0/dist/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <title>Hemanth Sahukari | Web Developer</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/2300780027.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 </head>
-<body >
-    <audio id="clickSound" src="audios/clickSound.mp3"  preload="auto"></audio>
+<body>
+    <audio id="clickSound" src="audios/clickSound.mp3" preload="auto"></audio>
     <audio id="thank-you" src="audios/thank-you-99932.mp3" preload="auto"></audio>
-<header>
-    <div id="no-internet-connection">
-        No internet connection
-    </div>
-    <div class="menu-icon" onclick="toggleMobileLinks()">
-        <p>PORTFOLIO</p>
-        <i class="fa-solid fa-bars"></i>
-    </div>
-    <nav class="navbar">
-            <a href="#" class="navbar-links">Home</a>
-            <span>|</span>
-            <a href="#skills" class="navbar-links">Skills</a>
-            <span>|</span>
-            <a href="certifications.html" class="navbar-links">Certifications</a>
-            <span>|</span>
-            <a href="projects.html" class="navbar-links">Project Videos</a>
-            <span>|</span>
-            <a href="achievements.html" class="navbar-links">Achievements</a>
-            <span>|</span>
-            <a href="#social-media" class="navbar-links">Contact</a>
-            <span>|</span>
-            <button  class="cv" class="navbar-links">View CV</button>
-    </nav>
-    <nav class="mobile-links">
-        <a href="#">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="certifications.html">Certifications</a>
-        <a href="projects.html">Project Videos</a>
-        <a href="achievements.html">Achievements</a>
-        <a href="#social-media">Contact</a>
-        <a  class="cv" href="resume/ResumeSoftops.pdf" download>View CV</a>
-    </nav>
-    <div class="cv-container-main">
-        <div id="cv-container">
-            <button class="x-mark" onclick="hideCV()">X</button>
-            <iframe src="resume/ResumeSoftops.pdf"><p>Resume</p></iframe>
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">HEMANTH</a>
+            <div class="mobile-menu-btn"><i class="fa-solid fa-bars"></i></div>
+            <nav>
+                <ul class="nav-links">
+                    <div class="mobile-menu-close"><i class="fa-solid fa-xmark"></i></div>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="resume/ResumeSoftops.pdf" class="nav-link mobile-only-nav-btn" download>Download CV</a></li>
+                </ul>
+            </nav>
+            <a href="resume/ResumeSoftops.pdf" class="btn" download>Download CV</a>
         </div>
-    </div>
-    <!-- <hr class="line" style="border: 1px solid #ef9696;"> -->
-</header>
-<main>
-    <div class="loading-line"></div>
-    <div class="image-container" id="about-me">
-        <div class="my-image">
-            <div class="image-adjustment"></div>
-        </div>
-        <h1>Hello There!<br> Welcome to <span class="name">Hemanth's</span> World </h1>
-    </div>
+    </header>
 
-        <div class="container" id="container">
-            <div class="about-me">
-                    <h2>About Me</h2>
-                    <p>Hi i am Hemanth Sahukari a passionate
-                        Web Developer.I specialised in developing websites that adapt to various screen sizes and browsers.
-                        Whether it's a desktop, tablet, or smartphone, i make websites to work effectively and look perfectly.
-                    </p>
+    <!-- Mobile Menu Overlay (Hidden by default, toggled via JS) -->
+    <div class="mobile-menu-overlay"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <span class="hero-subtitle">Hello There!</span>
+                <h1 class="hero-title">I'm <span class="name-reveal">Hemanth Sahukari</span><br>Web Developer</h1>
+                <p class="hero-desc">Specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View Work</a>
+                    <a href="#contact" class="btn" style="background: transparent; border: 1px solid var(--glass-border); margin-left: 1rem;">Contact Me</a>
+                </div>
             </div>
-            <h1 id="projects-text">Projects</h1><hr>
-            <div class="projects">
-                <div class="project">
-                    <img src="images/marvel.png" alt="food-website" loading="lazy" />
-                    <a href="https://mymarvel586.vercel.app">View Project 👁️</a>
-                    <button class="share-button" id="share-button">Share Project</button>
-                   <i class="fa-solid fa-heart"></i>
-                    <span class="like-count" id="like-count">0</span>
-                  </div>
-                <div class="project">
-                  <img src="images/foodFusionHomepage.png" alt="food-website" loading="lazy" />
-                  <a href="https://foodfusion586.vercel.app">View Project 👁️</a>
-                  <button class="share-button" id="share-button">Share Project</button>
-                 <i class="fa-solid fa-heart"></i>
-                  <span class="like-count" id="like-count">0</span>
-                </div>
-                <div class="project">
-                  <img src="images/Blog Website2.png" alt="blog" loading="lazy" />
-                  <a  href="https://blog-app-uq47.onrender.com">View Project 👁️</a>
-                  <button class="share-button" id="share-button">Share Project</button>
-                 <i class="fa-solid fa-heart"></i>
-                  <span class="like-count" id="like-count">0</span>
-                </div>
-                <div class="project">
-                  <img src="images/weather website.png" alt="weather" loading="lazy" />
-                  <a href="https://weatherapp586.vercel.app/">View Project 👁️</a>
-                  <button class="share-button" id="share-button">Share Project</button>
-                 <i class="fa-solid fa-heart"></i>
-                  <span class="like-count" id="like-count">0</span>
-                </div>
-                <div class="project">
-                  <img src="images/todo list.png" alt="todo" loading="lazy" />
-                  <a href="https://todoapp586.vercel.app/">View Project 👁️</a>
-                  <button class="share-button" id="share-button">Share Project</button>
-                 <i class="fa-solid fa-heart"></i>
-                  <span class="like-count" id="like-count">0</span>
-                </div>
-              </div>
-            <h1 id="skills">TECHNICAL <span id="skills2">SKILLS</span></h1><hr style="margin-top: -15px;">
-            <div class="skills">
-                <div class="image">
-                    <img src="images/html-5.png" title="HTML" class="skill-image" alt="HTML" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/css-3.png" title="CSS" class="skill-image" alt="CSS" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/js.png" title="JavaScript"  class="skill-image" alt="JavaScript" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/nodejs.png" title="Node JS"  class="skill-image" alt="node js" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/express.png" title="Express JS"  class="skill-image" alt="express" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/mongodb.png" title="MongoDB" class="skill-image" alt="MongoDB" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/react.png" title="React JS" class="skill-image" alt="react" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/git.png" title="Git" class="skill-image" alt="git" loading="lazy">
-                </div>
-                <div class="image">
-                    <img src="images/gsap-greensock-logo-512.png" title="Greensock Animation Platform" class="skill-image" alt="GSAP" loading="lazy">
-                </div>
-            </div><hr>
-            <div class="contact-form">
-                <p style="text-align: center; font-size: 28px; margin-bottom: 70px;">Get in <span style="color: rgb(244, 156, 146); font-weight: bolder;">Touch</span></p>
-                <form action="/success.html/" data-netlify="true" name="Your Messages" method="POST">
-                    <input type="text" id="name" class="hr-input" name="name" placeholder="Your Name" autocomplete="name" required>
-                    <input type="email" id="email" class="hr-input" name="email" placeholder="Your Email" autocomplete="email" required>
-                    <textarea class="hr-input" id="message" rows="4" name="message" placeholder="Enter your message here..." required></textarea><br>
-                    <button type="submit"  class="submit-btn">Submit</button>
-                </form>
+            <div class="scroll-indicator">
+                <i class="fa-solid fa-chevron-down" style="color: var(--text-secondary); font-size: 1.5rem;"></i>
             </div>
-            <div class="top">
-                <a href="#"><i title="back to top" class="fa-solid fa-arrow-up"></i></a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-img-wrapper">
+                        <img src="images/myimage.jpg" alt="Hemanth Sahukari">
+                    </div>
+                    <div class="about-text">
+                        <h3>Passionate about creating modern web solutions.</h3>
+                        <p>I am Hemanth Sahukari, a dedicated Web Developer with a knack for turning ideas into reality. I specialize in developing websites that adapt seamlessly to various screen sizes and browsing environments. Whether it's a sleek corporate site or a dynamic web application, I ensure perfection in every pixel.</p>
+                        <div class="stats">
+                            <!-- Optional stats can go here -->
+                        </div>
+                    </div>
+                </div>
             </div>
-            <hr>
-            <div class="social-media" id="social-media">
-                <a class="social-media-links" href="https://github.com/HemanthHamu" target="_blank" title="github"><i class="fa-brands fa-github"></i></i></a>
-                <a class="social-media-links" href="https://hemanthwebdev.blogspot.com/" target="_blank" title="blogger"><i class="fa-brands fa-blogger"></i></a>
-                <a class="social-media-links" href="https://www.linkedin.com/in/hemanthsahukari" target="_blank" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
-                <a class="social-media-links" href="https://www.instagram.com/_hemanth_virat_28?igshid=OGQ5ZDc2ODk2ZA== " target="_blank" title="instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a class="social-media-links" href="mailto:sahukarihemanth586@gmail.com" target="_blank" title="mail"><i class="fa-solid fa-envelope"></i></a>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Selected Works</h2>
+                <div class="project-grid">
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/marvel.png" alt="Marvel API Project">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Marvel Universe</h3>
+                            <p class="project-desc">Interactive dashboard exploring the Marvel API. Search characters, view comics, and explore the universe.</p>
+                            <div class="project-links">
+                                <a href="https://mymarvel586.vercel.app" target="_blank" class="icon-btn" title="Live Preview"><i class="fa-solid fa-external-link-alt"></i></a>
+                                <a href="#" class="icon-btn" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/foodFusionHomepage.png" alt="Food Fusion">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Food Fusion</h3>
+                            <p class="project-desc">A delicious food delivery landing page with modern layout and appetizing visuals.</p>
+                            <div class="project-links">
+                                <a href="https://foodfusion586.vercel.app" target="_blank" class="icon-btn" title="Live Preview"><i class="fa-solid fa-external-link-alt"></i></a>
+                                <a href="#" class="icon-btn" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/Blog Website2.png" alt="Blog App">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Tech Blog</h3>
+                            <p class="project-desc">Full-stack blogging platform built with modern technologies.</p>
+                            <div class="project-links">
+                                <a href="https://blog-app-uq47.onrender.com" target="_blank" class="icon-btn" title="Live Preview"><i class="fa-solid fa-external-link-alt"></i></a>
+                                <a href="#" class="icon-btn" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                     <!-- Project 4 -->
+                     <div class="project-card">
+                        <div class="project-img">
+                            <img src="images/weather website.png" alt="Weather App">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Weather Forecaster</h3>
+                            <p class="project-desc">Real-time weather application using OpenWeatherMap API.</p>
+                            <div class="project-links">
+                                <a href="https://weatherapp586.vercel.app/" target="_blank" class="icon-btn" title="Live Preview"><i class="fa-solid fa-external-link-alt"></i></a>
+                                <a href="#" class="icon-btn" title="View Code"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <hr>
-</main>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <img src="images/html-5.png" alt="HTML5" class="skill-icon">
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/css-3.png" alt="CSS3" class="skill-icon">
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/js.png" alt="JavaScript" class="skill-icon">
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/react.png" alt="React" class="skill-icon">
+                        <span class="skill-name">React</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/nodejs.png" alt="Node.js" class="skill-icon">
+                        <span class="skill-name">Node.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/express.png" alt="Express.js" class="skill-icon">
+                        <span class="skill-name">Express.js</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="images/mongodb.png" alt="MongoDB" class="skill-icon">
+                        <span class="skill-name">MongoDB</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" alt="Azure DevOps" class="skill-icon">
+                        <span class="skill-name">Azure DevOps</span>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="Material UI" class="skill-icon">
+                        <span class="skill-name">Material UI</span>
+                    </div>
+                     <div class="skill-card">
+                        <img src="images/gsap-greensock-logo-512.png" alt="GSAP" class="skill-icon">
+                        <span class="skill-name">GSAP</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="projects"> <!-- Reusing projects class for grid layout -->
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="certificationImages/JavaScript Certificate (Meta Certified)-1.png" alt="Meta Certified JavaScript">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Meta Certified Javascript</h3>
+                            <div class="project-links">
+                                <a href="https://coursera.org/share/eba940b1e495d1570cd46e135f3cb86b" target="_blank" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="certificationImages/HTML,CSS and JavaScript for web developers-1.png" alt="Web Developers Certification">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">HTML, CSS, JS</h3>
+                            <div class="project-links">
+                                <a href="https://coursera.org/share/102a6fa31f85338d3e5cc6e8dd0655d1" target="_blank" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="certificationImages/NodeJsCertificate.png" alt="Node.js Certificate">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Node.js Mastery</h3>
+                            <div class="project-links">
+                                <a href="https://members.codewithmosh.com/courses/293204/certificate" target="_blank" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="project-card">
+                        <div class="project-img">
+                            <img src="certificationImages/getting started with python-1.png" alt="Python Certificate">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Python Basics</h3>
+                            <div class="project-links">
+                                <a href="https://coursera.org/share/07a0eef0a592854cfe684fe8c9ba0e91" target="_blank" class="btn" style="padding: 8px 20px; font-size: 0.9rem;">View Certificate</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="projects" style="padding-top: 0;">
+             <div class="container">
+                <h2 class="section-title">Achievements</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <div class="project-img">
+                            <img src="achievementImages/TCS NQT Result-1.png" alt="TCS NQT Result">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">TCS NQT Qualified</h3>
+                            <p class="project-desc">Qualified the Tata Consultancy Services National Qualifier Test.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-container">
+                    <form id="contact-form" action="/success.html/" data-netlify="true" name="Your Messages" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-input" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-input" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-input" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        &copy; <span id="year"></span> Hemanth Sahukari
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/HemanthHamu" target="_blank" class="social-link"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hemanthsahukari" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:sahukarihemanth586@gmail.com" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+            </div>
+            <p>&copy; <span id="year"></span> Hemanth Sahukari. Built with <i class="fa-solid fa-heart" style="color: var(--accent-color);"></i></p>
+        </div>
     </footer>
-    <script src="portfolio.js" async ></script>
-</body> 
+
+    <script src="portfolio.js"></script>
+</body>
 </html>
