@@ -68,6 +68,120 @@ if (contactForm) {
     });
 }
 
+// --- Scroll Progress ---
+const progressBar = document.getElementById('scroll-progress');
+if (progressBar) {
+    window.addEventListener('scroll', () => {
+        const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrolled = (window.scrollY / scrollHeight) * 100;
+        progressBar.style.width = `${scrolled}%`;
+    });
+}
+
+// --- Canvas Fluid Aurora Background ---
+const canvas = document.getElementById('bg-canvas');
+if (canvas) {
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    let time = 0;
+    
+    window.addEventListener('resize', () => {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+    });
+
+    let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    window.addEventListener('mousemove', (e) => {
+        // Track mouse position to influence the fluid curves smoothly
+        mouse.x += (e.clientX - mouse.x) * 0.1;
+        mouse.y += (e.clientY - mouse.y) * 0.1;
+    });
+
+    function drawWave() {
+        requestAnimationFrame(drawWave);
+        
+        // Dark trail fade effect for aurora
+        ctx.fillStyle = 'rgba(10, 10, 10, 0.05)';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+        
+        const width = canvas.width;
+        const height = canvas.height;
+        const centerY = height / 2;
+
+        const gradient = ctx.createLinearGradient(0, 0, width, height);
+        gradient.addColorStop(0, 'rgba(99, 102, 241, 0.4)');   // Indigo
+        gradient.addColorStop(0.5, 'rgba(168, 85, 247, 0.4)'); // Purple
+        gradient.addColorStop(1, 'rgba(236, 72, 153, 0.4)');   // Pink
+        ctx.strokeStyle = gradient;
+
+        const maxLines = 4;
+        for (let i = 0; i < maxLines; i++) {
+            ctx.beginPath();
+            ctx.lineWidth = 1.5;
+
+            for (let x = 0; x < width; x += 10) {
+                // Organic combination of sine waves
+                const mouseInfluenceX = (mouse.x - width/2) * 0.001 * x;
+                const mouseInfluenceY = (mouse.y - height/2) * 0.1;
+
+                const y = Math.sin((x * 0.003) + time + i) * 60 
+                        + Math.sin((x * 0.001) - time * 0.5) * 120 
+                        + Math.cos((x * 0.005) + time * 0.2 + mouseInfluenceX) * 40
+                        + Math.sin(x * 0.002) * mouseInfluenceY;
+                
+                if (x === 0) {
+                    ctx.moveTo(x, centerY + y + (i * 20 - (maxLines*10)));
+                } else {
+                    ctx.lineTo(x, centerY + y + (i * 20 - (maxLines*10)));
+                }
+            }
+            ctx.stroke();
+        }
+        time += 0.015;
+    }
+    
+    drawWave();
+}
+
+// --- Typing Effect ---
+if (document.querySelector('.typed-text')) {
+    new Typed('.typed-text', {
+        strings: ['Web Developer', 'Frontend Specialist', 'UI/UX Enthusiast', 'Problem Solver'],
+        typeSpeed: 50,
+        backSpeed: 30,
+        backDelay: 2000,
+        loop: true
+    });
+}
+
+
+// --- Skills Filtering ---
+const filterBtns = document.querySelectorAll('.filter-btn');
+const skillCards = document.querySelectorAll('.skill-card');
+
+if (filterBtns.length > 0) {
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            filterBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const filter = btn.getAttribute('data-filter');
+            
+            skillCards.forEach(card => {
+                if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                    card.style.display = 'flex';
+                    gsap.fromTo(card, { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.5)" });
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+            ScrollTrigger.refresh();
+        });
+    });
+}
+
 // ANIMATIONS
 
 // Initial Load Animations
@@ -77,7 +191,8 @@ tl.from('header', {
     y: -100,
     opacity: 0,
     duration: 1,
-    ease: "power4.out"
+    ease: "power4.out",
+    clearProps: "all"
 })
 .from('.hero-subtitle', {
     y: 20,

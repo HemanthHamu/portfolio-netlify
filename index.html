@@ -9,8 +9,15 @@
     <script src="https://kit.fontawesome.com/2300780027.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 <body>
+    <!-- Premium Features Elements -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress" id="scroll-progress"></div>
+    </div>
+    <canvas id="bg-canvas"></canvas>
+
     <audio id="clickSound" src="audios/clickSound.mp3" preload="auto"></audio>
     <audio id="thank-you" src="audios/thank-you-99932.mp3" preload="auto"></audio>
     <header>
@@ -29,7 +36,9 @@
                     <li><a href="resume/Hemanth_Sahukari_MES.pdf" class="nav-link mobile-only-nav-btn" target="_blank">View CV</a></li>
                 </ul>
             </nav>
-            <a href="resume/Hemanth_Sahukari_MES.pdf" class="btn" target="_blank">View CV</a>
+            <div class="header-actions">
+                <a href="resume/Hemanth_Sahukari_MES.pdf" class="btn desktop-cv-btn" target="_blank">View CV</a>
+            </div>
         </div>
     </header>
 
@@ -41,7 +50,7 @@
         <section id="home" class="hero">
             <div class="hero-content">
                 <span class="hero-subtitle">Hello There!</span>
-                <h1 class="hero-title">I'm <span class="name-reveal">Hemanth Sahukari</span><br>Web Developer</h1>
+                <h1 class="hero-title">I'm <span class="name-reveal">Hemanth Sahukari</span><br><span class="typed-text"></span></h1>
                 <p class="hero-desc">Specializing in building exceptional digital experiences. Currently focused on creating accessible, human-centered products.</p>
                 <div class="hero-btns">
                     <a href="#projects" class="btn">View Work</a>
@@ -142,48 +151,55 @@
             </div>
         </section>
 
+
         <!-- Skills Section -->
         <section id="skills" class="skills">
             <div class="container">
                 <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-filter">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="frontend">Frontend</button>
+                    <button class="filter-btn" data-filter="backend">Backend</button>
+                    <button class="filter-btn" data-filter="tools">Tools</button>
+                </div>
                 <div class="skills-grid">
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="frontend">
                         <img src="images/html-5.png" alt="HTML5" class="skill-icon">
                         <span class="skill-name">HTML5</span>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="frontend">
                         <img src="images/css-3.png" alt="CSS3" class="skill-icon">
                         <span class="skill-name">CSS3</span>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="frontend">
                         <img src="images/js.png" alt="JavaScript" class="skill-icon">
                         <span class="skill-name">JavaScript</span>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="frontend">
                         <img src="images/react.png" alt="React" class="skill-icon">
                         <span class="skill-name">React</span>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="backend">
                         <img src="images/nodejs.png" alt="Node.js" class="skill-icon">
                         <span class="skill-name">Node.js</span>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="backend">
                         <img src="images/express.png" alt="Express.js" class="skill-icon">
                         <span class="skill-name">Express.js</span>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="backend">
                         <img src="images/mongodb.png" alt="MongoDB" class="skill-icon">
                         <span class="skill-name">MongoDB</span>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="tools">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg" alt="Azure DevOps" class="skill-icon">
                         <span class="skill-name">Azure DevOps</span>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-category="frontend">
                         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="Material UI" class="skill-icon">
                         <span class="skill-name">Material UI</span>
                     </div>
-                     <div class="skill-card">
+                     <div class="skill-card" data-category="tools">
                         <img src="images/gsap-greensock-logo-512.png" alt="GSAP" class="skill-icon">
                         <span class="skill-name">GSAP</span>
                     </div>
